@@ -11,7 +11,7 @@
 | Year | 2026 |
 | Title | InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene |
 | BibTeX | [View official BibTeX](#bibtex) |
-| Conference | CVPR main conference |
+| Conference | CVPR |
 | Journal | Not applicable (conference paper) |
 | Benchmark | OMOMO; TRUMANS |
 | Open Source | Not verified |

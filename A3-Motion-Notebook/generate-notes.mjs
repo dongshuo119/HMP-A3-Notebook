@@ -134,7 +134,7 @@ const nav = ["nav:", "  - 文献总览: index.md", "  - 研究方向:"];
 for (const [direction, info] of Object.entries(directionInfo)) {
   nav.push(`      - ${yamlLabel(direction)}: directions/${info.slug}.md`);
 }
-nav.push("  - 维护:", "      - 论文笔记模板: PAPER_TEMPLATE.md");
+nav.push("  - 维护:", "      - 检索覆盖审计: COVERAGE_AUDIT.md", "      - 论文笔记模板: PAPER_TEMPLATE.md");
 for (const year of [...new Set(papers.map(paper => paper.year))].sort((a, b) => b - a)) {
   nav.push(`  - ${year}:`);
   for (const direction of Object.keys(directionInfo)) {

@@ -11,7 +11,7 @@
 | Year | 2026 |
 | Title | ViHOI: Human-Object Interaction Synthesis with Visual Priors |
 | BibTeX | [View official BibTeX](#bibtex) |
-| Conference | CVPR main conference |
+| Conference | CVPR |
 | Journal | Not applicable (conference paper) |
 | Benchmark | FullBodyManipulation; BEHAVE |
 | Open Source | Yes |

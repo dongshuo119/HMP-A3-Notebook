@@ -11,7 +11,7 @@
 | Year | 2026 |
 | Title | Stability-Driven Motion Generation for Object-Guided Human-Human Co-Manipulation |
 | BibTeX | [View official BibTeX](#bibtex) |
-| Conference | CVPR main conference |
+| Conference | CVPR |
 | Journal | Not applicable (conference paper) |
 | Benchmark | Core4D; Inter-X |
 | Open Source | Yes |

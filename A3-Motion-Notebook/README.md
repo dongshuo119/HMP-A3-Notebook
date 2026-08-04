@@ -1,6 +1,6 @@
 # A3 Human Motion Research Notebook
 
-2024–2026 **In-context Human Motion Prediction / Context-aware Human Motion Generation** 文献笔记库。当前收录 **59 篇**：2024 年 16 篇、2025 年 25 篇、2026 年 18 篇；Prediction 25 篇、Generation 34 篇。
+2024–2026 **In-context Human Motion Prediction / Context-aware Human Motion Generation** 文献笔记库。当前收录 **208 篇**：2024 年 63 篇、2025 年 91 篇、2026 年 54 篇；Prediction 60 篇、Generation 148 篇。
 
 ## 日常编辑
 
@@ -11,6 +11,15 @@ node generate-notes.mjs
 ```
 
 脚本从 Markdown 笔记生成首页统计、方向索引和 `mkdocs.yml` 导航，避免多处手工同步。论文、代码和项目页使用标准 Markdown 链接，可在 GitHub 与 GitHub Pages 中直接点击。
+
+提交前可运行元数据与链接审计：
+
+```bash
+node scripts/audit-notes.mjs
+node scripts/check-links.mjs
+```
+
+系统检索的会议、期刊、排除规则和已知限制记录在 [Coverage Audit](docs/COVERAGE_AUDIT.md)。
 
 ## 本地预览
 

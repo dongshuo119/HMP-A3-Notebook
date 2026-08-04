@@ -2,47 +2,161 @@
 
 在语言、场景、物体、社会交互或任务条件下生成人体运动；其中部分工作与未来运动预测相邻，但不等同于预测任务。
 
-当前收录 **34** 篇。
+当前收录 **148** 篇。
 
 ## 2026
 
+- [A Survey on Human Interaction Motion Generation](../papers/2026/a-survey-on-human-interaction-motion-generation.md) — IJCV 2026
+- [Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation](../papers/2026/autoregressive-diffusion-with-hybrid-representation-for-interactive-human.md) — ACM TOG 2026
+- [Biomechanics-Guided Residual Approach to Generalizable Human Motion Generation and Estimation](../papers/2026/biomechanics-guided-residual-approach-to-generalizable-human-motion-generation.md) — IEEE TMM 2026
+- [Coordinating Multiple Conditions for Trajectory-Controlled Human Motion Generation](../papers/2026/coordinating-multiple-conditions-for-trajectory-controlled-human-motion-generation.md) — IEEE TMM 2026
+- [CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation](../papers/2026/coshmdm.md) — IEEE TVCG 2026
+- [CrowdMoGen: Event-Driven Collective Human Motion Generation](../papers/2026/crowdmogen.md) — IJCV 2026
+- [DanceAgent: Dance Movement Refinement With LLM Agent](../papers/2026/danceagent.md) — IEEE TVCG 2026
 - [Decoupled Generative Modeling for Human-Object Interaction Synthesis](../papers/2026/dechoi.md) — CVPR 2026
+- [Diffusion Implicit Policy for Unpaired Scene-aware Motion Synthesis](../papers/2026/diffusion-implicit-policy-for-unpaired-scene-aware-motion-synthesis.md) — AAAI 2026
 - [Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation](../papers/2026/dhvae.md) — ICLR 2026
+- [Dynamic Worlds, Dynamic Humans: Generating Virtual Human-Scene Interaction Motion in Dynamic Scenes](../papers/2026/dynamic-worlds-dynamic-humans-generating-virtual-human-scene-interaction.md) — IEEE TVCG 2026
+- [EgoMDM: Diffusion-Based Human Motion Synthesis from Sparse Egocentric Sensors](../papers/2026/egomdm.md) — 3DV 2026
+- [ExGes: Expressive Human Motion Retrieval and Modulation for Audio-Driven Gesture Synthesis](../papers/2026/exges.md) — IEEE TVCG 2026
+- [FineXtrol: Controllable Motion Generation via Fine-Grained Text](../papers/2026/finextrol.md) — AAAI 2026
+- [GCDance: Genre-Controlled Music-Driven 3D Full Body Dance Generation](../papers/2026/gcdance.md) — IEEE TMM 2026
+- [Generating Distance-Aware Human-to-Human Interaction Motions From Text Guidance](../papers/2026/generating-distance-aware-human-to-human-interaction-motions-from-text-guidance.md) — IEEE TVCG 2026
+- [HOSIG: Full-Body Human-Object-Scene Interaction Generation with Hierarchical Scene Perception](../papers/2026/hosig.md) — AAAI 2026
 - [HSI-GPT2: A Dual-Granularity Large Motion Reasoning Model with Diffusion Refinement for Human-Scene Interaction](../papers/2026/hsi-gpt2.md) — CVPR 2026
+- [Human Motion Synthesis in 3D Scenes via Unified Scene Semantic Occupancy](../papers/2026/human-motion-synthesis-in-3d-scenes-via-unified.md) — AAAI 2026
 - [InfBaGel: Human-Object-Scene Interaction Generation with Dynamic Perception and Iterative Refinement](../papers/2026/infbagel.md) — ICLR 2026
+- [IntentMotion: Learning Intent-Aware Human Motion from Language in 3D Scenes](../papers/2026/intentmotion.md) — AAAI 2026
 - [Interact2Ar: Full-Body Human-Human Interaction Generation via Autoregressive Diffusion Models](../papers/2026/interact2ar.md) — CVPR 2026
+- [InterMamba: Efficient Human-Human Interaction Generation With Adaptive Spatio-Temporal Mamba](../papers/2026/intermamba.md) — IEEE TVCG 2026
 - [InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene](../papers/2026/interphys.md) — CVPR 2026
 - [InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions](../papers/2026/interprior.md) — CVPR 2026
+- [LaMP: Learning Robust Latent Motion Prior for Optimization-Based Human Motion Generation](../papers/2026/lamp.md) — 3DV 2026
+- [MOCHI: Motion Enhancement of Collaborative Human-object Interactions](../papers/2026/mochi.md) — ACM TOG 2026
+- [MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives](../papers/2026/motionbricks.md) — ACM TOG 2026
+- [MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance](../papers/2026/multiact.md) — SIGGRAPH 2026
+- [MvtText: A Multistage Latent Diffusion Framework for Text-Driven Human Motion Generation](../papers/2026/mvttext.md) — IEEE TMM 2026
 - [PAMotion: Physics-Aware Motion Generation for Full-Body Interaction with Multiple Objects](../papers/2026/pamotion.md) — CVPR 2026
+- [ReAlign: Text-to-Motion Generation via Step-Aware Reward-Guided Alignment](../papers/2026/realign.md) — AAAI 2026
 - [Stability-Driven Motion Generation for Object-Guided Human-Human Co-Manipulation](../papers/2026/como.md) — CVPR 2026
+- [Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion](../papers/2026/streaming-generation-of-co-speech-gestures-via-accelerated-rolling.md) — AAAI 2026
+- [Stylized Text-to-Motion Generation via Hypernetwork-Driven Low-Rank Adaptation](../papers/2026/stylized-text-to-motion-generation-via-hypernetwork-driven-low-rank-adaptation.md) — SIGGRAPH 2026
 - [SyncMos: Scalable Motion Synchronisation for Multi-Agent Scene Interaction](../papers/2026/syncmos.md) — CVPR 2026
 - [TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size](../papers/2026/teamhoi.md) — CVPR 2026
+- [Two-stage diffusion for hands and articulated objects interaction synthesis](../papers/2026/two-stage-diffusion-for-hands-and-articulated-objects-interaction.md) — Pattern Recognition 2026
+- [UniScene-MoTion: Unified Scene & Motion-aware Diffusion Transition Framework](../papers/2026/uniscene-motion.md) — AAAI 2026
 - [Unleashing Guidance Without Classifiers for Human-Object Interaction Animation](../papers/2026/pace-guided-hoi.md) — ICLR 2026
 - [ViHOI: Human-Object Interaction Synthesis with Visual Priors](../papers/2026/vihoi.md) — CVPR 2026
 
 ## 2025
 
 - [A Unified Framework for Motion Reasoning and Generation in Human Interaction](../papers/2025/molam.md) — ICCV 2025
+- [Aligning Human Motion Generation with Human Perceptions](../papers/2025/aligning-human-motion-generation-with-human-perceptions.md) — ICLR 2025
+- [AutoKeyframe: Autoregressive Keyframe Generation for Human Motion Synthesis and Editing](../papers/2025/autokeyframe.md) — SIGGRAPH 2025
 - [AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation](../papers/2025/avatargo.md) — ICLR 2025
 - [ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation](../papers/2025/chainhoi.md) — CVPR 2025
+- [CHOICE: Coordinated Human-Object Interaction in Cluttered Environments for Pick-and-Place Actions](../papers/2025/choice.md) — ACM TOG 2025
+- [Co3Gesture: Towards Coherent Concurrent Co-speech 3D Gesture Generation with Interactive Diffusion](../papers/2025/co3gesture.md) — ICLR 2025
+- [CoheDancers: Enhancing Interactive Group Dance Generation through Music-Driven Coherence Decomposition](../papers/2025/cohedancers.md) — ACM Multimedia 2025
+- [DanceEditor: Towards Iterative Editable Music-Driven Dance Generation with Open-Vocabulary Descriptions](../papers/2025/danceeditor.md) — ICCV 2025
+- [Deterministic-to-Stochastic Diverse Latent Feature Mapping for Human Motion Synthesis](../papers/2025/deterministic-to-stochastic-diverse-latent-feature-mapping-for-human-motion.md) — CVPR 2025
+- [DIDiffGes: Decoupled Semi-Implicit Diffusion Models for Real-time Gesture Generation from Speech](../papers/2025/didiffges.md) — AAAI 2025
+- [Doodle Your Motion: Sketch-Guided Human Motion Generation](../papers/2025/doodle-your-motion-sketch-guided-human-motion-generation.md) — IEEE TVCG 2025
+- [DuetGen: Music Driven Two-Person Dance Generation via Hierarchical Masked Modeling](../papers/2025/duetgen.md) — SIGGRAPH 2025
+- [Dynamic Motion Transition: A Hybrid Data-Driven and Model-Driven Method for Human Pose Transitions](../papers/2025/dynamic-motion-transition-a-hybrid-data-driven-and-model-driven.md) — IEEE TVCG 2025
+- [EigenActor: Variant Body-Object Interaction Generation Evolved from Invariant Action Basis Reasoning](../papers/2025/eigenactor.md) — IEEE TPAMI 2025
+- [EnergyMoGen: Compositional Human Motion Generation with Energy-Based Diffusion Model in Latent Space](../papers/2025/energymogen.md) — CVPR 2025
+- [Environment-aware Motion Matching](../papers/2025/environment-aware-motion-matching.md) — ACM TOG 2025
+- [Fg-T2M++: LLMs-Augmented Fine-Grained Text Driven Human Motion Generation](../papers/2025/fg-t2m.md) — IJCV 2025
+- [GenM3: Generative Pretrained Multi-Path Motion Model for Text Conditional Human Motion Generation](../papers/2025/genm3.md) — ICCV 2025
+- [GestureHYDRA: Semantic Co-Speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation](../papers/2025/gesturehydra.md) — ICCV 2025
+- [GestureLSM: Latent Shortcut Based Co-Speech Gesture Generation with Spatial-Temporal Modeling](../papers/2025/gesturelsm.md) — ICCV 2025
 - [HOI-Dyn: Learning Interaction Dynamics for Human-Object Motion Diffusion](../papers/2025/hoi-dyn.md) — NeurIPS 2025
+- [HOP: Heterogeneous Topology-based Multimodal Entanglement for Co-Speech Gesture Generation](../papers/2025/hop.md) — CVPR 2025
 - [HSI-GPT: A General-Purpose Large Scene-Motion-Language Model for Human Scene Interaction](../papers/2025/hsigpt.md) — CVPR 2025
+- [Human Motion Generation in 3D Scenes from Open-Ended Textual Instructions with MLLM Planning](../papers/2025/human-motion-generation-in-3d-scenes-from-open-ended.md) — ACM Multimedia 2025
 - [InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation](../papers/2025/interact.md) — CVPR 2025
+- [Interactive Humanoid: Online Full Body Human Motion Reaction Synthesis with Social Affordance Forecasting and Canonicalization](../papers/2025/interactive-humanoid-online-full-body-human-motion-reaction.md) — 3DV 2025
+- [InteractMove: Text-Controlled Human-Object Interaction Generation in 3D Scenes with Movable Objects](../papers/2025/interactmove.md) — ACM Multimedia 2025
+- [Jointly Understand Your Command and Intention: Reciprocal Co-Evolution Between Scene-Aware 3D Human Motion Synthesis and Analysis](../papers/2025/jointly-understand-your-command-and-intention-reciprocal-co-evolution.md) — IEEE TMM 2025
+- [Leader is Guided: Interactive Motion Generation via Lead-Follow Paradigm and Trajectory Guidance](../papers/2025/leader-is-guided-interactive-motion-generation-via-lead-follow.md) — ACM Multimedia 2025
 - [Learning to Generate Human-Human-Object Interactions from Textual Descriptions](../papers/2025/hhoi-text.md) — NeurIPS 2025
+- [Light-T2M: A Lightweight and Fast Model for Text-to-motion Generation](../papers/2025/light-t2m.md) — AAAI 2025
+- [MDD: A Dataset for Text-and-Music Conditioned Duet Dance Generation](../papers/2025/mdd.md) — ICCV 2025
+- [MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps](../papers/2025/momaps.md) — ICCV 2025
+- [Morph: a Motion-Free Physics Optimization Framework for Human Motion Generation](../papers/2025/morph.md) — ICCV 2025
+- [MOST: Motion Diffusion Model for Rare Text via Temporal Clip Banzhaf Interaction](../papers/2025/most.md) — IEEE TVCG 2025
 - [Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs](../papers/2025/motion-agent.md) — ICLR 2025
+- [Motion-example-controlled Co-speech Gesture Generation Leveraging Large Language Models](../papers/2025/motion-example-controlled-co-speech-gesture-generation-leveraging-large-language-models.md) — SIGGRAPH 2025
+- [MotionBind: Multi-Modal Human Motion Alignment for Retrieval, Recognition, and Generation](../papers/2025/motionbind.md) — NeurIPS 2025
+- [MotionLab: Unified Human Motion Generation and Editing via the Motion-Condition-Motion Paradigm](../papers/2025/motionlab.md) — ICCV 2025
 - [Move-in-2D: 2D-Conditioned Human Motion Generation](../papers/2025/move2d.md) — CVPR 2025
+- [Music-Aligned Holistic 3D Dance Generation via Hierarchical Motion Modeling](../papers/2025/music-aligned-holistic-3d-dance-generation-via-hierarchical-motion.md) — ICCV 2025
+- [PersonaBooth: Personalized Text-to-Motion Generation](../papers/2025/personabooth.md) — CVPR 2025
+- [PP-Motion: Physical-Perceptual Fidelity Evaluation for Human Motion Generation](../papers/2025/pp-motion.md) — ACM Multimedia 2025
+- [PUMPS: Skeleton-Agnostic Point-Based Universal Motion Pre-Training for Synthesis in Human Motion Tasks](../papers/2025/pumps.md) — ICCV 2025
+- [RapVerse: Coherent Vocals and Whole-Body Motion Generation from Text](../papers/2025/rapverse.md) — ICCV 2025
+- [Rethinking Diffusion for Text-Driven Human Motion Generation: Redundant Representations, Evaluation, and Masked Autoregression](../papers/2025/rethinking-diffusion-for-text-driven-human-motion-generation-redundant.md) — CVPR 2025
+- [SALAD: Skeleton-aware Latent Diffusion for Text-driven Motion Generation and Editing](../papers/2025/salad.md) — CVPR 2025
 - [SceneMI: Motion In-betweening for Modeling Human-Scene Interaction](../papers/2025/scenemi.md) — ICCV 2025
+- [Scenemi: Motion In-Betweening for Modeling Human-Scene Interactions](../papers/2025/scenemi-2.md) — ICCV 2025
 - [SemGeoMo: Dynamic Contextual Human Motion Generation with Semantic and Geometric Guidance](../papers/2025/semgeomo.md) — CVPR 2025
+- [SemGes: Semantics-Aware Co-Speech Gesture Generation Using Semantic Coherence and Relevance Learning](../papers/2025/semges.md) — ICCV 2025
+- [Shape My Moves: Text-Driven Shape-Aware Synthesis of Human Motions](../papers/2025/shape-my-moves-text-driven-shape-aware-synthesis-of-human.md) — CVPR 2025
+- [SIMS: Simulating Stylized Human-Scene Interactions with Retrieval-Augmented Script Generation](../papers/2025/sims.md) — ICCV 2025
 - [Sitcom-Crafter: A Plot-Driven Human Motion Generation System in 3D Scenes](../papers/2025/sitcom-crafter.md) — ICLR 2025
+- [SnapMoGen: Human Motion Generation from Expressive Texts](../papers/2025/snapmogen.md) — NeurIPS 2025
+- [SoPo: Text-to-Motion Generation Using Semi-Online Preference Optimization](../papers/2025/sopo.md) — NeurIPS 2025
+- [SpeechAct: Towards Generating Whole-Body Motion From Speech](../papers/2025/speechact.md) — IEEE TVCG 2025
 - [SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis](../papers/2025/syncdiff.md) — ICCV 2025
+- [Text-to-Any-Skeleton Motion Generation Without Retargeting](../papers/2025/text-to-any-skeleton-motion-generation-without-retargeting.md) — ICCV 2025
+- [TIMotion: Temporal and Interactive Framework for Efficient Human-Human Motion Generation](../papers/2025/timotion.md) — CVPR 2025
+- [TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization](../papers/2025/tokenhsi.md) — CVPR 2025
+- [Towards Immersive Human-X Interaction: A Real-Time Framework for Physically Plausible Motion Synthesis](../papers/2025/towards-immersive-human-x-interaction-a-real-time-framework-for.md) — ICCV 2025
+- [Uni-Inter: Unifying 3D Human Motion Synthesis Across Diverse Interaction Contexts](../papers/2025/uni-inter.md) — SIGGRAPH Asia 2025
+- [Unimotion: Unifying 3D Human Motion Synthesis and Understanding](../papers/2025/unimotion.md) — 3DV 2025
+- [UniMuMo: Unified Text, Music, and Motion Generation](../papers/2025/unimumo.md) — AAAI 2025
+- [You Think, You ACT: the New Task of Arbitrary Text to Motion Generation](../papers/2025/you-think-you-act-the-new-task-of.md) — ICCV 2025
 
 ## 2024
 
+- [Beyond Talking – Generating Holistic 3D Human Dyadic Motion for Communication](../papers/2024/beyond-talking-generating-holistic-3d-human-dyadic.md) — IJCV 2024
 - [CooHOI: Learning Cooperative Human-Object Interaction with Manipulated Object Dynamics](../papers/2024/coohoi.md) — NeurIPS 2024
+- [DiffSHEG: A Diffusion-Based Approach for Real-Time Speech-Driven Holistic 3D Expression and Gesture Generation](../papers/2024/diffsheg.md) — CVPR 2024
+- [EGGesture: Entropy-Guided Vector Quantized Variational AutoEncoder for Co-Speech Gesture Generation](../papers/2024/eggesture.md) — ACM Multimedia 2024
+- [EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling](../papers/2024/emage.md) — CVPR 2024
+- [Emphasizing Semantic Consistency of Salient Posture for Speech-Driven Gesture Generation](../papers/2024/emphasizing-semantic-consistency-of-salient-posture-for-speech-driven.md) — ACM Multimedia 2024
+- [Enhanced Fine-Grained Motion Diffusion for Text-Driven Human Motion Synthesis](../papers/2024/enhanced-fine-grained-motion-diffusion-for-text-driven-human-motion.md) — AAAI 2024
+- [Evaluating Gesture Generation in a Large-scale Open Challenge: The GENEA Challenge 2022](../papers/2024/evaluating-gesture-generation-in-a-large-scale-open-challenge.md) — ACM TOG 2024
+- [Everything2Motion: Synchronizing Diverse Inputs via a Unified Framework for Human Motion Synthesis](../papers/2024/everything2motion.md) — AAAI 2024
+- [FreeMotion: MoCap-Free Human Motion Synthesis with Multimodal Large Language Models](../papers/2024/freemotion.md) — ECCV 2024
+- [Generating Human Interaction Motions in Scenes with Text Control](../papers/2024/generating-human-interaction-motions-in-scenes-with-text.md) — ECCV 2024
 - [Generating Human Motion in 3D Scenes from Text Descriptions](../papers/2024/lhmp.md) — CVPR 2024
+- [GenZI: Zero-Shot 3D Human-Scene Interaction Generation](../papers/2024/genzi.md) — CVPR 2024
+- [GUESS: GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](../papers/2024/guess.md) — IEEE TVCG 2024
+- [Human Motion Diffusion as a Generative Prior](../papers/2024/human-motion-diffusion-as-a-generative-prior.md) — ICLR 2024
+- [Human Motion Generation: A Survey](../papers/2024/human-motion-generation-a-survey.md) — IEEE TPAMI 2024
+- [HuTuMotion: Human-Tuned Navigation of Latent Motion Diffusion Models with Minimal Feedback](../papers/2024/hutumotion.md) — AAAI 2024
+- [Interactive Character Control with Auto-Regressive Motion Diffusion Models](../papers/2024/interactive-character-control-with-auto-regressive-motion-diffusion-models.md) — ACM TOG 2024
 - [InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint](../papers/2024/intercontrol.md) — NeurIPS 2024
 - [InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction](../papers/2024/interdreamer.md) — NeurIPS 2024
+- [InterGen: Diffusion-Based Multi-human Motion Generation Under Complex Interactions](../papers/2024/intergen.md) — IJCV 2024
+- [LGTM: Local-to-Global Text-Driven Human Motion Diffusion Model](../papers/2024/lgtm.md) — SIGGRAPH 2024
+- [Local Action-Guided Motion Diffusion Model for Text-to-Motion Generation](../papers/2024/local-action-guided-motion-diffusion-model-for-text-to-motion-generation.md) — ECCV 2024
+- [MambaGesture: Enhancing Co-Speech Gesture Generation with Mamba and Disentangled Multi-Modality Fusion](../papers/2024/mambagesture.md) — ACM Multimedia 2024
+- [MDT-A2G: Exploring Masked Diffusion Transformers for Co-Speech Gesture Generation](../papers/2024/mdt-a2g.md) — ACM Multimedia 2024
+- [MotionDiffuse: Text-Driven Human Motion Generation With Diffusion Model](../papers/2024/motiondiffuse.md) — IEEE TPAMI 2024
 - [Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance](../papers/2024/moveasyou.md) — CVPR 2024
+- [NeRM: Learning Neural Representations for High-Framerate Human Motion Synthesis](../papers/2024/nerm.md) — ICLR 2024
+- [NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis](../papers/2024/nifty.md) — CVPR 2024
 - [OmniControl: Control Any Joint at Any Time for Human Motion Generation](../papers/2024/omnicontrol.md) — ICLR 2024
+- [Realistic Human Motion Generation with Cross-Diffusion Models](../papers/2024/realistic-human-motion-generation-with-cross-diffusion-models.md) — ECCV 2024
+- [Revisit Human-Scene Interaction via Space Occupancy](../papers/2024/revisit-human-scene-interaction-via-space-occupancy.md) — ECCV 2024
 - [Scaling Up Dynamic Human-Scene Interaction Modeling](../papers/2024/trumans.md) — CVPR 2024
+- [Semantic Gesticulator: Semantics-Aware Co-Speech Gesture Synthesis](../papers/2024/semantic-gesticulator-semantics-aware-co-speech-gesture-synthesis.md) — ACM TOG 2024
+- [Text Motion Translator: A Bi-directional Model for Enhanced 3D Human Motion Generation from Open-Vocabulary Descriptions](../papers/2024/text-motion-translator-a-bi-directional-model-for-enhanced.md) — ECCV 2024
+- [Text2HOI: Text-Guided 3D Motion Generation for Hand-Object Interaction](../papers/2024/text2hoi.md) — CVPR 2024
+- [TLControl: Trajectory and Language Control for Human Motion Synthesis](../papers/2024/tlcontrol.md) — ECCV 2024
+- [Unified Human-Scene Interaction via Prompted Chain-of-Contacts](../papers/2024/unified-human-scene-interaction-via-prompted-chain-of-contacts.md) — ICLR 2024
 - [WANDR: Intention-guided Human Motion Generation](../papers/2024/wandr.md) — CVPR 2024
+- [Weakly-Supervised Emotion Transition Learning for Diverse 3D Co-Speech Gesture Generation](../papers/2024/weakly-supervised-emotion-transition-learning-for-diverse-3d-co-speech.md) — CVPR 2024
