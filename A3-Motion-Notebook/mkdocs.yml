@@ -1,0 +1,46 @@
+site_name: A3 Human Motion Research
+site_description: In-context Human Motion Prediction & Generation literature notebook
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: green
+    accent: teal
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - 文献总览: index.md
+  - 2026:
+      - InterPhys: papers/2026/interphys.md
+      - Co-Manipulation: papers/2026/como.md
+      - ViHOI: papers/2026/vihoi.md
+  - 2025:
+      - Vision-Guided Action: papers/2025/vga.md
+      - Lightweight Interactions: papers/2025/lsti.md
+      - Move-in-2D: papers/2025/move2d.md
+      - SemGeoMo: papers/2025/semgeomo.md
+      - HSI-GPT: papers/2025/hsigpt.md
+      - InterAct: papers/2025/interact.md
+      - ChainHOI: papers/2025/chainhoi.md
+  - 2024:
+      - Multimodal Forecasting: papers/2024/msif.md
+      - Scene-responsive Prediction: papers/2024/scenedm.md
+      - WANDR: papers/2024/wandr.md
+      - Text in 3D Scenes: papers/2024/lhmp.md
+      - Move as You Say: papers/2024/moveasyou.md
+      - TRUMANS: papers/2024/trumans.md
+      - InterControl: papers/2024/intercontrol.md
+      - InterDreamer: papers/2024/interdreamer.md

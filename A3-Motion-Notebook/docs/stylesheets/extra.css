@@ -1,0 +1,6 @@
+:root { --md-primary-fg-color:#255f4e; --md-accent-fg-color:#397866; }
+.md-typeset h1,.md-typeset h2 { font-family:Georgia,"Noto Serif SC",serif; }
+.md-typeset table:not([class]) { font-size:.72rem; }
+.md-typeset .paper-meta td:first-child { color:#777; width:8rem; }
+.md-typeset .paper-meta td { border:none; border-bottom:1px solid #eceae4; }
+.md-header { box-shadow:none; }
