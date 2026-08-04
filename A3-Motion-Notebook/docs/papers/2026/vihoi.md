@@ -8,13 +8,19 @@
 
 | Field | Content |
 |---|---|
-| Authors | Songjin Cai; Linjie Zhong; Ling Guo; Changxing Ding |
-| Venue | CVPR main conference |
 | Year | 2026 |
+| Title | ViHOI: Human-Object Interaction Synthesis with Visual Priors |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR main conference |
+| Journal | Not applicable (conference paper) |
+| Benchmark | FullBodyManipulation; BEHAVE |
+| Open Source | Yes |
+| Main Authors | Songjin Cai; Linjie Zhong; Ling Guo; Changxing Ding |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Cai_ViHOI_Human-Object_Interaction_Synthesis_with_Visual_Priors_CVPR_2026_paper.html) |
+| GitHub Link | [Official repository](https://github.com/MPI-Lab/ViHOI) |
 | Publication Status | Officially published in CVPR 2026 proceedings; CVF Open Access page verified |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Cai_ViHOI_Human-Object_Interaction_Synthesis_with_Visual_Priors_CVPR_2026_paper.html) |
-| Code | [Official repository](https://github.com/MPI-Lab/ViHOI) |
 | Project Page | Not verified |
+| Code / Resources | [Official repository](https://github.com/MPI-Lab/ViHOI) |
 | Dataset | FullBodyManipulation; BEHAVE |
 | Task | Visual-prior-enhanced 3D human-object interaction generation |
 | Input | Text prompt and a set of 2D reference interaction images |
@@ -22,8 +28,20 @@
 | Context Type | Language; visual object/interaction priors |
 | Method Family | Diffusion with VLM/Q-Former visual-prior adapter |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Cai_2026_CVPR,
+    author    = {Cai, Songjin and Zhong, Linjie and Guo, Ling and Ding, Changxing},
+    title     = {ViHOI: Human-Object Interaction Synthesis with Visual Priors},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {30686-30695}
+}
+```
+
+## Problem
 Text descriptions rarely specify object scale, shape, contact, and full-body spatial relationships, limiting HOI diffusion models on unseen objects and actions.
 
 ## Key Idea

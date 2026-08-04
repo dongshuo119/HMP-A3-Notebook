@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Peishan Cong; Ziyi Wang; Yuexin Ma; Xiangyu Yue |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Cong_SemGeoMo_Dynamic_Contextual_Human_Motion_Generation_with_Semantic_and_Geometric_CVPR_2025_paper.html) |
-| Code | [Official repository](https://github.com/4DVLab/SemGeoMo) |
+| Title | SemGeoMo: Dynamic Contextual Human Motion Generation with Semantic and Geometric Guidance |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | FullBodyManipulation; BEHAVE; IMHD2; HoDome |
+| Open Source | Yes |
+| Main Authors | Peishan Cong; Ziyi Wang; Yuexin Ma; Xiangyu Yue |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Cong_SemGeoMo_Dynamic_Contextual_Human_Motion_Generation_with_Semantic_and_Geometric_CVPR_2025_paper.html) |
+| GitHub Link | [Official repository](https://github.com/4DVLab/SemGeoMo) |
 | Project Page | [SemGeoMo project page](https://4dvlab.github.io/project_page/semgeomo/) |
+| Code / Resources | [Official repository](https://github.com/4DVLab/SemGeoMo) |
 | Dataset | FullBodyManipulation; BEHAVE; IMHD2; HoDome |
 | Task | Dynamic contextual human interaction motion generation |
 | Input | Sequential point clouds of an interaction target |
@@ -21,8 +27,20 @@
 | Context Type | Dynamic object/person geometry; affordance; generated language |
 | Method Family | Diffusion with semantic/geometric guidance |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Cong_2025_CVPR,
+    author    = {Cong, Peishan and Wang, Ziyi and Ma, Yuexin and Yue, Xiangyu},
+    title     = {SemGeoMo: Dynamic Contextual Human Motion Generation with Semantic and Geometric Guidance},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {17561-17570}
+}
+```
+
+## Problem
 Dynamic contexts change through time, so a generator must infer both how to interact semantically and where contacts should occur geometrically.
 
 ## Key Idea

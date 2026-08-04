@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jianwei Tang; Hong Yang; Tengyue Chen; Jian-Fang Hu |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Tang_Stochastic_Human_Motion_Prediction_with_Memory_of_Action_Transition_and_CVPR_2025_paper.html) |
-| Code | [Official project/code page](https://hyqlat.github.io/STABACB.github.io/) |
+| Title | Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Four motion-prediction datasets; names not verified |
+| Open Source | Not verified |
+| Main Authors | Jianwei Tang; Hong Yang; Tengyue Chen; Jian-Fang Hu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Tang_Stochastic_Human_Motion_Prediction_with_Memory_of_Action_Transition_and_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | [Official project page](https://hyqlat.github.io/STABACB.github.io/) |
+| Code / Resources | [Official project/code page](https://hyqlat.github.io/STABACB.github.io/) |
 | Dataset | Four motion-prediction datasets; names not verified |
 | Task | Target-action-conditioned stochastic future motion prediction |
 | Input | Observed non-target action motion and a target action condition |
@@ -21,8 +27,20 @@
 | Context Type | Target action label; learned transition and action memories |
 | Method Family | Memory-augmented stochastic prediction |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Tang_2025_CVPR,
+    author    = {Tang, Jianwei and Yang, Hong and Chen, Tengyue and Hu, Jian-Fang},
+    title     = {Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {1883-1893}
+}
+```
+
+## Problem
 Action-conditioned prediction must both transition smoothly at variable speeds and preserve the distinctive motion characteristics of the target action.
 
 ## Key Idea

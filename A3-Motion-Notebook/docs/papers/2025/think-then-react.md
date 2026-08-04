@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Wenhui Tan; Boyuan Li; Chuhao Jin; Wenbing Huang; Xiting Wang; Ruihua Song |
-| Venue | ICLR |
 | Year | 2025 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea0b28cbbd0cbc45ec4ac38e92da9cb2-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Wenhui Tan; Boyuan Li; Chuhao Jin; Wenbing Huang; Xiting Wang; Ruihua Song |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea0b28cbbd0cbc45ec4ac38e92da9cb2-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Unprompted human action-to-reaction motion generation |
 | Input | One person's action motion |
@@ -21,8 +27,22 @@
 | Context Type | Other person's motion; inferred action intent and reaction text |
 | Method Family | Motion-language reasoning and generation |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2025_ea0b28cb,
+ author = {Tan, Wenhui and Li, Boyuan and Jin, Chuhao and Huang, Wenbing and Wang, Xiting and Song, Ruihua},
+ booktitle = {International Conference on Learning Representations},
+ editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},
+ pages = {93701--93714},
+ title = {Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/ea0b28cbbd0cbc45ec4ac38e92da9cb2-Paper-Conference.pdf},
+ volume = {2025},
+ year = {2025}
+}
+```
+
+## Problem
 Direct action-to-reaction prediction lacks an explicit semantic bridge and a unified way to encode egocentric pose and shared space.
 
 ## Key Idea

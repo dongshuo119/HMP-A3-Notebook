@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Dong Wei; Huaijiang Sun; Fan Liu; Yuhui Zheng |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Wei_Progressive_Guessing_to_Fixed_Point_Rethinking_Human_Motion_Prediction_with_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | Progressive Guessing to Fixed Point: Rethinking Human Motion Prediction with Deep Equilibrium Models |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Human3.6M; additional datasets not verified |
+| Open Source | Not verified |
+| Main Authors | Dong Wei; Huaijiang Sun; Fan Liu; Yuhui Zheng |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Wei_Progressive_Guessing_to_Fixed_Point_Rethinking_Human_Motion_Prediction_with_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Human3.6M; additional datasets not verified |
 | Task | Efficient deterministic human motion prediction |
 | Input | Observed pose sequence, optionally as a streaming sequence |
@@ -21,8 +27,20 @@
 | Context Type | Motion history; streaming warm-start state |
 | Method Family | Equivariant deep equilibrium model |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Wei_2026_CVPR,
+    author    = {Wei, Dong and Sun, Huaijiang and Liu, Fan and Zheng, Yuhui},
+    title     = {Progressive Guessing to Fixed Point: Rethinking Human Motion Prediction with Deep Equilibrium Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {16454-16463}
+}
+```
+
+## Problem
 Cascaded refinement increases compute and memory with depth and offers no principled stopping criterion.
 
 ## Key Idea

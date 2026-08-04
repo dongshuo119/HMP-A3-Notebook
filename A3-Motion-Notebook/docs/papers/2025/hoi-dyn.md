@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Lin Wu; Zhixiang Chen; Jianglin Lan |
-| Venue | NeurIPS |
 | Year | 2025 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/82cddd1547dd8e3915d1a220f209e714-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | HOI-Dyn: Learning Interaction Dynamics for Human-Object Motion Diffusion |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Lin Wu; Zhixiang Chen; Jianglin Lan |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/82cddd1547dd8e3915d1a220f209e714-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | [Official project page](https://wulin97.github.io/hoi-dyn) |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Physically and causally consistent human-object motion generation |
 | Input | HOI generation conditions and human motion |
@@ -21,8 +27,23 @@
 | Context Type | Human action; object response dynamics |
 | Method Family | Diffusion with training-only driver-responder dynamics model |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2025_82cddd15,
+ author = {Wu, Lin and Chen, Zhixiang and Lan, Jianglin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ pages = {90795--90825},
+ publisher = {Curran Associates, Inc.},
+ title = {HOI-Dyn: Learning Interaction Dynamics for Human-Object Motion Diffusion},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/82cddd1547dd8e3915d1a220f209e714-Paper-Conference.pdf},
+ volume = {38},
+ year = {2025}
+}
+```
+
+## Problem
 Generating human and object streams independently can produce objects that respond implausibly or before the driving human action.
 
 ## Key Idea

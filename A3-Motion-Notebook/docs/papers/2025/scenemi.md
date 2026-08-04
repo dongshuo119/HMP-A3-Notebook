@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Inwoo Hwang; Bing Zhou; Young Min Kim; Jian Wang; Chuan Guo |
-| Venue | ICCV |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Hwang_SceneMI_Motion_In-betweening_for_Modeling_Human-Scene_Interaction_ICCV_2025_paper.html) |
-| Code | Not verified |
+| Title | SceneMI: Motion In-betweening for Modeling Human-Scene Interaction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICCV |
+| Journal | Not applicable (conference paper) |
+| Benchmark | GIMO; additional training datasets not verified |
+| Open Source | Not verified |
+| Main Authors | Inwoo Hwang; Bing Zhou; Young Min Kim; Jian Wang; Chuan Guo |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Hwang_SceneMI_Motion_In-betweening_for_Modeling_Human-Scene_Interaction_ICCV_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | GIMO; additional training datasets not verified |
 | Task | Scene-aware motion in-betweening and motion refinement |
 | Input | 3D scene and sparse or noisy motion keyframes |
@@ -21,8 +27,20 @@
 | Context Type | 3D scene geometry; local contacts; motion keyframes |
 | Method Family | Scene-conditioned diffusion in-betweening |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Hwang_2025_ICCV,
+    author    = {Hwang, Inwoo and Zhou, Bing and Kim, Young Min and Wang, Jian and Guo, Chuan},
+    title     = {SceneMI: Motion In-betweening for Modeling Human-Scene Interaction},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {6034-6045}
+}
+```
+
+## Problem
 Free-form HSI generation can lack controllability, while real animation and reconstruction often provide endpoints or sparse keyframes that should be respected.
 
 ## Key Idea

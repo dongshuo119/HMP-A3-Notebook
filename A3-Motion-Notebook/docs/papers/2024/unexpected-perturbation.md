@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jiangbei Yue; Baiyi Li; Julien Pettré; Armin Seyfried; He Wang |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Yue_Human_Motion_Prediction_Under_Unexpected_Perturbation_CVPR_2024_paper.html) |
-| Code | Not verified |
+| Title | Human Motion Prediction Under Unexpected Perturbation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Jiangbei Yue; Baiyi Li; Julien Pettré; Armin Seyfried; He Wang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Yue_Human_Motion_Prediction_Under_Unexpected_Perturbation_CVPR_2024_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Predict reactive single- and multi-person motion after unexpected physical impact |
 | Input | Pre-impact human state and external perturbation conditions |
@@ -21,8 +27,20 @@
 | Context Type | Physical perturbation; person-person contact |
 | Method Family | Latent differentiable physics plus neural prediction |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Yue_2024_CVPR,
+    author    = {Yue, Jiangbei and Li, Baiyi and Pettr\'e, Julien and Seyfried, Armin and Wang, He},
+    title     = {Human Motion Prediction Under Unexpected Perturbation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1501-1511}
+}
+```
+
+## Problem
 Unpremeditated reactions to external impacts differ from controlled actions and can propagate through contacting people, while suitable training data are scarce.
 
 ## Key Idea

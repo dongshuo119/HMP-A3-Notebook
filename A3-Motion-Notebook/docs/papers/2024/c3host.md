@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Haitao Yan; Qiongjie Cui; Jiexin Xie; Shijie Guo |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Yan_Forecasting_of_3D_Whole-body_Human_Poses_with_Grasping_Objects_CVPR_2024_paper.html) |
-| Code | Not verified |
+| Title | Forecasting of 3D Whole-body Human Poses with Grasping Objects |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Two benchmarks; names not verified |
+| Open Source | Not verified |
+| Main Authors | Haitao Yan; Qiongjie Cui; Jiexin Xie; Shijie Guo |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Yan_Forecasting_of_3D_Whole-body_Human_Poses_with_Grasping_Objects_CVPR_2024_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | [Official project page](https://sites.google.com/view/c3host) |
+| Code / Resources | Not verified |
 | Dataset | Two benchmarks; names not verified |
 | Task | Forecast whole-body and hand motion during object grasping |
 | Input | Observed body/hand motion and object-related multimodal context |
@@ -21,8 +27,20 @@
 | Context Type | Grasped object; hand-body cross-context |
 | Method Family | Cross-context cross-modal consolidation |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Yan_2024_CVPR,
+    author    = {Yan, Haitao and Cui, Qiongjie and Xie, Jiexin and Guo, Shijie},
+    title     = {Forecasting of 3D Whole-body Human Poses with Grasping Objects},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1726-1736}
+}
+```
+
+## Problem
 Body-only predictors omit fine hand motion and the external coupling introduced by grasped objects.
 
 ## Key Idea

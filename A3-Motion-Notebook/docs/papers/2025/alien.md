@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Dong Wei; Xiaoning Sun; Xizhan Gao; Shengxiang Hu; Huaijiang Sun |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Wei_ALIEN_Implicit_Neural_Representations_for_Human_Motion_Prediction_under_Arbitrary_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | ALIEN: Implicit Neural Representations for Human Motion Prediction under Arbitrary Latency |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Dong Wei; Xiaoning Sun; Xizhan Gao; Shengxiang Hu; Huaijiang Sun |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Wei_ALIEN_Implicit_Neural_Representations_for_Human_Motion_Prediction_under_Arbitrary_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Future pose prediction with arbitrary system latency |
 | Input | Historical motion and a variable latency query |
@@ -21,8 +27,20 @@
 | Context Type | Motion history; deployment latency |
 | Method Family | Implicit neural representation with hypernetwork modulation |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Wei_2025_CVPR,
+    author    = {Wei, Dong and Sun, Xiaoning and Gao, Xizhan and Hu, Shengxiang and Sun, Huaijiang},
+    title     = {ALIEN: Implicit Neural Representations for Human Motion Prediction under Arbitrary Latency},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {1861-1870}
+}
+```
+
+## Problem
 Prediction systems incur variable transmission and computation delays, so forecasts made as if inference were instantaneous may already be obsolete when consumed.
 
 ## Key Idea

@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Zhi Cen; Huaijin Pi; Sida Peng; Zehong Shen; Minghui Yang; Shuai Zhu; Hujun Bao; Xiaowei Zhou |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Cen_Generating_Human_Motion_in_3D_Scenes_from_Text_Descriptions_CVPR_2024_paper.html) |
-| Code | [Official repository](https://github.com/zju3dv/text_scene_motion) |
+| Title | Generating Human Motion in 3D Scenes from Text Descriptions |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HUMANISE; AMASS pretraining; PROX for zero-shot scene generalization |
+| Open Source | Yes |
+| Main Authors | Zhi Cen; Huaijin Pi; Sida Peng; Zehong Shen; Minghui Yang; Shuai Zhu; Hujun Bao; Xiaowei Zhou |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Cen_Generating_Human_Motion_in_3D_Scenes_from_Text_Descriptions_CVPR_2024_paper.html) |
+| GitHub Link | [Official repository](https://github.com/zju3dv/text_scene_motion) |
 | Project Page | [Project page](https://zju3dv.github.io/text_scene_motion) |
+| Code / Resources | [Official repository](https://github.com/zju3dv/text_scene_motion) |
 | Dataset | HUMANISE; AMASS pretraining; PROX for zero-shot scene generalization |
 | Task | Text-guided human-scene interaction generation |
 | Input | Text instruction and a 3D indoor-scene scan |
@@ -21,8 +27,20 @@
 | Context Type | Language; 3D scene; target object |
 | Method Family | LLM-based object grounding plus diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Cen_2024_CVPR,
+    author    = {Cen, Zhi and Pi, Huaijin and Peng, Sida and Shen, Zehong and Yang, Minghui and Zhu, Shuai and Bao, Hujun and Zhou, Xiaowei},
+    title     = {Generating Human Motion in 3D Scenes from Text Descriptions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1855-1866}
+}
+```
+
+## Problem
 The model must resolve spatial language to a particular object and then synthesize motion that is both text-faithful and geometrically compatible with that object and scene.
 
 ## Key Idea

@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Ziyin Wang; Sirui Xu; Chuan Guo; Bing Zhou; Jiangshan Gong; Jian Wang; Yu-Xiong Wang; Liang-Yan Gui |
-| Venue | ICLR |
 | Year | 2026 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/4c8ce3c63f6b66d6811c6d67c68e487b-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Unleashing Guidance Without Classifiers for Human-Object Interaction Animation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Real and synthetic object-geometry training data; names not verified |
+| Open Source | Not verified |
+| Main Authors | Ziyin Wang; Sirui Xu; Chuan Guo; Bing Zhou; Jiangshan Gong; Jian Wang; Yu-Xiong Wang; Liang-Yan Gui |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/4c8ce3c63f6b66d6811c6d67c68e487b-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Real and synthetic object-geometry training data; names not verified |
 | Task | Human-object interaction animation |
 | Input | HOI condition and object geometry |
@@ -21,8 +27,22 @@
 | Context Type | Object geometry; cross-modal contact |
 | Method Family | Asynchronous diffusion forcing |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2026_4c8ce3c6,
+ author = {Wang, Ziyin and Xu, Sirui and guo, chuan and Zhou, Bing and Gong, Jiangshan and Wang, Jian and Wang, Yu-Xiong and Gui, Liang-Yan},
+ booktitle = {International Conference on Learning Representations},
+ editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},
+ pages = {46121--46141},
+ title = {Unleashing Guidance Without Classifiers for Human-Object Interaction Animation},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/4c8ce3c63f6b66d6811c6d67c68e487b-Paper-Conference.pdf},
+ volume = {2026},
+ year = {2026}
+}
+```
+
+## Problem
 Contact quality often relies on handcrafted constraints or auxiliary classifiers that may not generalize to novel geometry.
 
 ## Key Idea

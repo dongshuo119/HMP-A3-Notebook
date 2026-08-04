@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yuanhong Zheng; Ruixuan Yu; Jian Sun |
-| Venue | ICCV |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Zheng_Efficient_Multi-Person_Motion_Prediction_by_Lightweight_Spatial_and_Temporal_Interactions_ICCV_2025_paper.html) |
-| Code | [Official repository](https://github.com/Yuanhong-Zheng/EMPMP) |
+| Title | Efficient Multi-Person Motion Prediction by Lightweight Spatial and Temporal Interactions |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICCV |
+| Journal | Not applicable (conference paper) |
+| Benchmark | 3DPW; AMASS; CMU-Mocap; MuPoTS-3D |
+| Open Source | Yes |
+| Main Authors | Yuanhong Zheng; Ruixuan Yu; Jian Sun |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Zheng_Efficient_Multi-Person_Motion_Prediction_by_Lightweight_Spatial_and_Temporal_Interactions_ICCV_2025_paper.html) |
+| GitHub Link | [Official repository](https://github.com/Yuanhong-Zheng/EMPMP) |
 | Project Page | Not verified |
+| Code / Resources | [Official repository](https://github.com/Yuanhong-Zheng/EMPMP) |
 | Dataset | 3DPW; AMASS; CMU-Mocap; MuPoTS-3D |
 | Task | Multi-person 3D motion prediction |
 | Input | Historical skeleton sequences for multiple people |
@@ -21,8 +27,20 @@
 | Context Type | Other people; inter-person distance and temporal interaction |
 | Method Family | Lightweight dual-branch interaction network |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Zheng_2025_ICCV,
+    author    = {Zheng, Yuanhong and Yu, Ruixuan and Sun, Jian},
+    title     = {Efficient Multi-Person Motion Prediction by Lightweight Spatial and Temporal Interactions},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {10844-10853}
+}
+```
+
+## Problem
 Multi-person forecasting requires both individual temporal modeling and inter-person reasoning, but Transformer-heavy approaches can be expensive for deployment.
 
 ## Key Idea

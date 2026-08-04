@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Sirui Xu; Dongting Li; Yucheng Zhang; Xiyan Xu; Qi Long; Ziyin Wang; Yunzhi Lu; Shuchang Dong; Hezi Jiang; Akshat Gupta; Yu-Xiong Wang; Liang-Yan Gui |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Xu_InterAct_Advancing_Large-Scale_Versatile_3D_Human-Object_Interaction_Generation_CVPR_2025_paper.html) |
-| Code | [Official repository](https://github.com/wzyabcas/InterAct) |
+| Title | InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | InterAct; InterAct-X, consolidated from seven public HOI sources |
+| Open Source | Yes |
+| Main Authors | Sirui Xu; Dongting Li; Yucheng Zhang; Xiyan Xu; Qi Long; Ziyin Wang; Yunzhi Lu; Shuchang Dong; Hezi Jiang; Akshat Gupta; Yu-Xiong Wang; Liang-Yan Gui |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Xu_InterAct_Advancing_Large-Scale_Versatile_3D_Human-Object_Interaction_Generation_CVPR_2025_paper.html) |
+| GitHub Link | [Official repository](https://github.com/wzyabcas/InterAct) |
 | Project Page | [InterAct project page](https://sirui-xu.github.io/InterAct/) |
+| Code / Resources | [Official repository](https://github.com/wzyabcas/InterAct) |
 | Dataset | InterAct; InterAct-X, consolidated from seven public HOI sources |
 | Task | Six HOI tasks including generation, imitation, and interaction prediction |
 | Input | Text, action, human motion, object motion, or partial interaction depending on task |
@@ -21,8 +27,20 @@
 | Context Type | Language; action; dynamic object; observed interaction |
 | Method Family | Unified multitask generative HOI model and data optimization pipeline |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Xu_2025_CVPR,
+    author    = {Xu, Sirui and Li, Dongting and Zhang, Yucheng and Xu, Xiyan and Long, Qi and Wang, Ziyin and Lu, Yunzhi and Dong, Shuchang and Jiang, Hezi and Gupta, Akshat and Wang, Yu-Xiong and Gui, Liang-Yan},
+    title     = {InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {7048-7060}
+}
+```
+
+## Problem
 Existing HOI datasets are small, inconsistent, and affected by penetration, floating contact, and hand artifacts, preventing scalable generative modeling.
 
 ## Key Idea

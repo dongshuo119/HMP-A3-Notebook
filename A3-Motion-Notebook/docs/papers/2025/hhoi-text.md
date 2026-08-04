@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jeonghyeon Na; Sangwon Baik; Inhee Lee; Junyoung Lee; Hanbyul Joo |
-| Venue | NeurIPS |
 | Year | 2025 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/bb363e99bcaaa36a891ca927151ffb9a-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Learning to Generate Human-Human-Object Interactions from Textual Descriptions |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Newly captured HHOI dataset plus synthesized HHOI data; formal name not verified |
+| Open Source | Not verified |
+| Main Authors | Jeonghyeon Na; Sangwon Baik; Inhee Lee; Junyoung Lee; Hanbyul Joo |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/bb363e99bcaaa36a891ca927151ffb9a-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Newly captured HHOI dataset plus synthesized HHOI data; formal name not verified |
 | Task | Text-to human-human-object interaction generation |
 | Input | Textual interaction description and object context |
@@ -21,8 +27,23 @@
 | Context Type | Language; human-human; shared object; scene configuration |
 | Method Family | Composed score-based diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2025_bb363e99,
+ author = {Na, Jeonghyeon and Baik, Sangwon and Lee, Inhee and Lee, Junyoung and Joo, Hanbyul},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ pages = {128800--128818},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning to Generate Human-Human-Object Interactions from Textual Descriptions},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/bb363e99bcaaa36a891ca927151ffb9a-Paper-Conference.pdf},
+ volume = {38},
+ year = {2025}
+}
+```
+
+## Problem
 Human-human spacing and coordination depend on a shared object and scene situation, but dedicated multi-person-object motion data are scarce.
 
 ## Key Idea

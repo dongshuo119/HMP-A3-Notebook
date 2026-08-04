@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jaewoo Jeong; Daehee Park; Kuk-Jin Yoon |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Multi-agent_Long-term_3D_Human_Pose_Forecasting_via_Interaction-aware_Trajectory_Conditioning_CVPR_2024_paper.html) |
-| Code | [Official GitHub](https://github.com/Jaewoo97/T2P) |
+| Title | Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | A new long-term multi-agent dataset; additional benchmarks not verified |
+| Open Source | Yes |
+| Main Authors | Jaewoo Jeong; Daehee Park; Kuk-Jin Yoon |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Multi-agent_Long-term_3D_Human_Pose_Forecasting_via_Interaction-aware_Trajectory_Conditioning_CVPR_2024_paper.html) |
+| GitHub Link | [Official GitHub](https://github.com/Jaewoo97/T2P) |
 | Project Page | Not verified |
+| Code / Resources | [Official GitHub](https://github.com/Jaewoo97/T2P) |
 | Dataset | A new long-term multi-agent dataset; additional benchmarks not verified |
 | Task | Multimodal long-term multi-person trajectory and 3D pose forecasting |
 | Input | Observed global trajectories and local 3D poses for multiple people |
@@ -21,8 +27,20 @@
 | Context Type | Social interaction; other people; trajectory context |
 | Method Family | Coarse-to-fine graph-based multimodal forecasting |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Jeong_2024_CVPR,
+    author    = {Jeong, Jaewoo and Park, Daehee and Yoon, Kuk-Jin},
+    title     = {Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1617-1628}
+}
+```
+
+## Problem
 Long horizons and many interacting people amplify uncertainty and make independently forecasting each body inadequate.
 
 ## Key Idea

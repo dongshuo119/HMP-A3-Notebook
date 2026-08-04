@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Xiaoning Sun; Dong Wei; Huaijiang Sun; Shengxiang Hu |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Sun_LAL_Enhancing_3D_Human_Motion_Prediction_with_Latency-aware_Auxiliary_Learning_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | LAL: Enhancing 3D Human Motion Prediction with Latency-aware Auxiliary Learning |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Xiaoning Sun; Dong Wei; Huaijiang Sun; Shengxiang Hu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Sun_LAL_Enhancing_3D_Human_Motion_Prediction_with_Latency-aware_Auxiliary_Learning_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Latency-compatible 3D human motion prediction |
 | Input | Observed motion; auxiliary training branch additionally sees the latency interval |
@@ -21,8 +27,20 @@
 | Context Type | Motion history; response latency |
 | Method Family | Latency-aware auxiliary learning |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Sun_2025_CVPR,
+    author    = {Sun, Xiaoning and Wei, Dong and Sun, Huaijiang and Hu, Shengxiang},
+    title     = {LAL: Enhancing 3D Human Motion Prediction with Latency-aware Auxiliary Learning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {7105-7114}
+}
+```
+
+## Problem
 The initial part of a conventional prediction may have elapsed before a robot can react, yet that elapsed motion is useful supervision during training.
 
 ## Key Idea

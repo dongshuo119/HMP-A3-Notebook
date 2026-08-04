@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Chaitanya Patel; Hiroki Nakamura; Yuta Kyuragi; Kazuki Kozuka; Juan Carlos Niebles; Ehsan Adeli |
-| Venue | ICCV |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Patel_UniEgoMotion_A_Unified_Model_for_Egocentric_Motion_Reconstruction_Forecasting_and_ICCV_2025_paper.html) |
-| Code | Not verified |
+| Title | UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICCV |
+| Journal | Not applicable (conference paper) |
+| Benchmark | EE4D-Motion, derived from EgoExo4D |
+| Open Source | Not verified |
+| Main Authors | Chaitanya Patel; Hiroki Nakamura; Yuta Kyuragi; Kazuki Kozuka; Juan Carlos Niebles; Ehsan Adeli |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Patel_UniEgoMotion_A_Unified_Model_for_Egocentric_Motion_Reconstruction_Forecasting_and_ICCV_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | EE4D-Motion, derived from EgoExo4D |
 | Task | Egocentric motion reconstruction, forecasting, and generation |
 | Input | First-person image(s), with observed motion for forecasting |
@@ -21,8 +27,20 @@
 | Context Type | Egocentric visual scene context |
 | Method Family | Unified conditional motion diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Patel_2025_ICCV,
+    author    = {Patel, Chaitanya and Nakamura, Hiroki and Kyuragi, Yuta and Kozuka, Kazuki and Niebles, Juan Carlos and Adeli, Ehsan},
+    title     = {UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {10318-10329}
+}
+```
+
+## Problem
 First-person cameras have dynamic viewpoints, occlusion, and limited field of view, while many scene-aware methods assume an explicit third-person 3D scene.
 
 ## Key Idea

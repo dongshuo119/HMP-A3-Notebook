@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Qi Wu; Yubo Zhao; Yifan Wang; Xinhang Liu; Yu-Wing Tai; Chi-Keung Tang |
-| Venue | ICLR |
 | Year | 2025 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/77c6ccacfd9962e2307fc64680fc5ace-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Qi Wu; Yubo Zhao; Yifan Wang; Xinhang Liu; Yu-Wing Tai; Chi-Keung Tang |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/77c6ccacfd9962e2307fc64680fc5ace-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Conversational motion generation, editing, and understanding |
 | Input | Multi-turn language and motion tokens |
@@ -21,8 +27,22 @@
 | Context Type | Language; dialogue history; prior motion |
 | Method Family | Adapter-tuned motion-language model with LLM orchestration |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2025_77c6ccac,
+ author = {Wu, Qi and Zhao, Yubo and Wang, Yifan and Liu, Xinhang and Tai, Yu-Wing and Tang, Chi-Keung},
+ booktitle = {International Conference on Learning Representations},
+ editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},
+ pages = {48023--48043},
+ title = {Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/77c6ccacfd9962e2307fc64680fc5ace-Paper-Conference.pdf},
+ volume = {2025},
+ year = {2025}
+}
+```
+
+## Problem
 Task-specific motion generators are costly to retrain and do not naturally support complex multi-turn customization.
 
 ## Key Idea

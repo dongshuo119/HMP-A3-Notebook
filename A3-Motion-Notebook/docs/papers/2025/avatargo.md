@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yukang Cao; Liang Pan; Kai Han; Kwan-Yee K. Wong; Ziwei Liu |
-| Venue | ICLR |
 | Year | 2025 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/999a7fa10ed25ce8b836b14ff003ad50-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Yukang Cao; Liang Pan; Kai Han; Kwan-Yee K. Wong; Ziwei Liu |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/999a7fa10ed25ce8b836b14ff003ad50-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Zero-shot text-to-4D human-object interaction generation |
 | Input | Text and pretrained human/object generative priors |
@@ -21,8 +27,22 @@
 | Context Type | Language; object; body-part contact |
 | Method Family | LLM-guided contact retargeting and motion optimization |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2025_999a7fa1,
+ author = {Cao, Yukang and Pan, Liang and Han, Kai and Wong, Kwan-Yee K and Liu, Ziwei},
+ booktitle = {International Conference on Learning Representations},
+ editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},
+ pages = {61254--61270},
+ title = {AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/999a7fa10ed25ce8b836b14ff003ad50-Paper-Conference.pdf},
+ volume = {2025},
+ year = {2025}
+}
+```
+
+## Problem
 Pretrained diffusion priors do not know where an object should contact the body or how the object should move with that body part.
 
 ## Key Idea

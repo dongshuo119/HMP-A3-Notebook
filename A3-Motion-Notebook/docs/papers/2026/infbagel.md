@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yude Zou; Junji Gong; Xing Gao; Zixuan Li; Tianxing Chen; Guanjie Zheng |
-| Venue | ICLR |
 | Year | 2026 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b20852ac0a083262ecc98b49bca43086-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | InfBaGel: Human-Object-Scene Interaction Generation with Dynamic Perception and Iterative Refinement |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HOI datasets with pseudo scene occupancy; high-fidelity HSI data; names not verified |
+| Open Source | Not verified |
+| Main Authors | Yude Zou; Junji Gong; Xing Gao; Zixuan Li; Tianxing Chen; Guanjie Zheng |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b20852ac0a083262ecc98b49bca43086-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | [Official project page](https://yudezou.github.io/InfBaGel-page/) |
+| Code / Resources | Not verified |
 | Dataset | HOI datasets with pseudo scene occupancy; high-fidelity HSI data; names not verified |
 | Task | Instruction-conditioned human-object-scene interaction generation |
 | Input | Language, object state, and voxelized scene context |
@@ -21,8 +27,22 @@
 | Context Type | Language; object; dynamic 3D scene |
 | Method Family | Coarse-to-fine consistency model with dynamic perception |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2026_b20852ac,
+ author = {Zou, Yude and Gong, Junji and Gao, Xing and Li, Zixuan and Chen, Tianxing and Zheng, Guanjie},
+ booktitle = {International Conference on Learning Representations},
+ editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},
+ pages = {109474--109495},
+ title = {InfBaGel: Human-Object-Scene Interaction Generation with Dynamic Perception and Iterative Refinement},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/b20852ac0a083262ecc98b49bca43086-Paper-Conference.pdf},
+ volume = {2026},
+ year = {2026}
+}
+```
+
+## Problem
 HOSI motion must reason about object-driven scene changes but lacks richly annotated joint human-object-scene datasets.
 
 ## Key Idea

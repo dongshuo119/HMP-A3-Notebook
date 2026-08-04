@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Hwanhee Jung; Seunggwan Lee; Jeongyoon Yoon; SeungHyeon Kim; Giljoo Nam; Qixing Huang; Sangpil Kim |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Jung_Decoupled_Generative_Modeling_for_Human-Object_Interaction_Synthesis_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | Decoupled Generative Modeling for Human-Object Interaction Synthesis |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | FullBodyManipulation; 3D-FUTURE |
+| Open Source | Not verified |
+| Main Authors | Hwanhee Jung; Seunggwan Lee; Jeongyoon Yoon; SeungHyeon Kim; Giljoo Nam; Qixing Huang; Sangpil Kim |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Jung_Decoupled_Generative_Modeling_for_Human-Object_Interaction_Synthesis_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | FullBodyManipulation; 3D-FUTURE |
 | Task | Long-sequence human-object interaction synthesis in dynamic scenes |
 | Input | Human/object start and task conditions with a static or moving counterpart |
@@ -21,8 +27,20 @@
 | Context Type | Object; dynamic scene; moving counterpart |
 | Method Family | Decoupled trajectory and action generators with adversarial contact modeling |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Jung_2026_CVPR,
+    author    = {Jung, Hwanhee and Lee, Seunggwan and Yoon, Jeongyoon and Kim, SeungHyeon and Nam, Giljoo and Huang, Qixing and Kim, Sangpil},
+    title     = {Decoupled Generative Modeling for Human-Object Interaction Synthesis},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {2253-2263}
+}
+```
+
+## Problem
 One network handling planning, detailed action, synchronization, and contact can require manual waypoints and produce penetration or mismatched object motion.
 
 ## Key Idea

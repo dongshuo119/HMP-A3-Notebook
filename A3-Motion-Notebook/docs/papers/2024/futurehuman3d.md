@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Christian Diller; Thomas Funkhouser; Angela Dai |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Diller_FutureHuman3D_Forecasting_Complex_Long-Term_3D_Human_Behavior_from_Video_Observations_CVPR_2024_paper.html) |
-| Code | Not verified |
+| Title | FutureHuman3D: Forecasting Complex Long-Term 3D Human Behavior from Video Observations |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | MPII Cooking II; IKEA-ASM; unpaired 3D pose data |
+| Open Source | Not verified |
+| Main Authors | Christian Diller; Thomas Funkhouser; Angela Dai |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Diller_FutureHuman3D_Forecasting_Complex_Long-Term_3D_Human_Behavior_from_Video_Observations_CVPR_2024_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | MPII Cooking II; IKEA-ASM; unpaired 3D pose data |
 | Task | Long-term joint action and characteristic 3D pose forecasting |
 | Input | Recent RGB frames, extracted 2D poses, observed action labels, and initial object labels |
@@ -21,8 +27,20 @@
 | Context Type | Video; action semantics; object labels |
 | Method Family | Weakly supervised autoregressive action-pose forecasting |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Diller_2024_CVPR,
+    author    = {Diller, Christian and Funkhouser, Thomas and Dai, Angela},
+    title     = {FutureHuman3D: Forecasting Complex Long-Term 3D Human Behavior from Video Observations},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {19902-19914}
+}
+```
+
+## Problem
 Long-term behavior forecasting needs both semantic action prediction and spatial 3D pose reasoning, but complex activity datasets rarely provide paired 3D supervision.
 
 ## Key Idea

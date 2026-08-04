@@ -3,6 +3,10 @@ import path from "node:path";
 
 const docsDir = "docs";
 const papersDir = path.join(docsDir, "papers");
+const requiredFields = [
+  "Year", "Title", "BibTeX", "Conference", "Journal", "Benchmark",
+  "Open Source", "Main Authors", "Paper Link", "GitHub Link",
+];
 const directionInfo = {
   "In-context Human Motion Prediction": {
     slug: "prediction",
@@ -34,10 +38,22 @@ function parsePaper(file) {
     const key = match[1].trim();
     if (key !== "Field" && key !== "---") fields[key] = match[2].trim();
   }
+  for (const field of requiredFields) {
+    if (!fields[field]) throw new Error(`Missing required field '${field}' in ${file}`);
+  }
+  for (const field of ["Paper Link", "GitHub Link"]) {
+    const value = fields[field];
+    if (value !== "Not verified" && !/^\[[^\]]+\]\(https?:\/\/[^)]+\)$/.test(value)) {
+      throw new Error(`Field '${field}' must be a clickable Markdown link in ${file}`);
+    }
+  }
+  if (fields["GitHub Link"] !== "Not verified" && !/\]\(https?:\/\/github\.com\//i.test(fields["GitHub Link"])) {
+    throw new Error(`GitHub Link must point to github.com in ${file}`);
+  }
+  if (!/^## BibTeX\s*$/m.test(source)) throw new Error(`Missing BibTeX section in ${file}`);
 
   const direction = heading[3].trim();
   if (!directionInfo[direction]) throw new Error(`Unknown direction '${direction}' in ${file}`);
-  const relative = path.relative(docsDir, file).replaceAll("\\", "/");
   return {
     title,
     venue: heading[1].trim(),
@@ -45,7 +61,7 @@ function parsePaper(file) {
     direction,
     status,
     fields,
-    relative,
+    relative: path.relative(docsDir, file).replaceAll("\\", "/"),
   };
 }
 
@@ -63,14 +79,39 @@ const countBy = key => Object.entries(
 
 const summaryRows = papers.map(paper => {
   const note = `[${paper.title}](${paper.relative})`;
-  return `| ${note} | ${paper.year} | ${paper.venue} | ${paper.direction} | ${paper.fields["Context Type"] || "Not verified"} | ${paper.status} |`;
+  const bibtex = `[View BibTeX](${paper.relative}#bibtex)`;
+  return `| ${paper.year} | ${note} | ${bibtex} | ${paper.fields.Conference} | ${paper.fields.Journal} | ${paper.fields.Benchmark} | ${paper.fields["Open Source"]} | ${paper.fields["Main Authors"]} | ${paper.fields["Paper Link"]} | ${paper.fields["GitHub Link"]} |`;
 }).join("\n");
 
 const yearStats = countBy("year").map(([year, count]) => `${year}: ${count}`).join(" · ");
 const directionStats = countBy("direction").map(([direction, count]) => `${direction}: ${count}`).join(" · ");
 const venueStats = countBy("venue").map(([venue, count]) => `${venue}: ${count}`).join(" · ");
 
-fs.writeFileSync(path.join(docsDir, "index.md"), `# A3 Human Motion Research\n\n**2024–2026 · In-context Human Motion Prediction & Context-aware Human Motion Generation**\n\n> 面向导师汇报与持续科研使用的 Markdown-first 文献笔记。论文信息以各独立笔记为唯一正文数据源；本页和导航由脚本生成。\n\n## 统计\n\n- 共 ${papers.length} 篇\n- 年份：${yearStats}\n- 方向：${directionStats}\n- Venue：${venueStats}\n\n## 文献总览\n\n| Title | Year | Venue | Research Direction | Context Type | Status |\n|---|---:|---|---|---|---|\n${summaryRows}\n\n## 编辑方式\n\n直接编辑 \`docs/papers/年份/*.md\`，然后运行 \`node generate-notes.mjs\` 同步首页、方向索引和 MkDocs 导航。无法由一手来源确认的字段保留为 \`Not verified\`。\n`, "utf8");
+fs.writeFileSync(path.join(docsDir, "index.md"), `# A3 Human Motion Research
+
+**2024–2026 · In-context Human Motion Prediction & Context-aware Human Motion Generation**
+
+> 面向导师汇报与持续科研使用的 Markdown-first 文献笔记。论文笔记是正文的单一数据源；本页和导航由脚本生成。
+
+## 统计
+
+- 共 ${papers.length} 篇
+- 年份：${yearStats}
+- 方向：${directionStats}
+- Venue：${venueStats}
+
+## 文献总览
+
+下表优先展示 Year、Title、BibTeX、Conference、Journal、Benchmark、Open Source、Main Authors、Paper Link 和 GitHub Link。所有已核验链接均可直接点击；未核验链接统一标为 \`Not verified\`。
+
+| Year | Title | BibTeX | Conference | Journal | Benchmark | Open Source | Main Authors | Paper Link | GitHub Link |
+|---:|---|---|---|---|---|---|---|---|---|
+${summaryRows}
+
+## 编辑方式
+
+直接编辑 \`docs/papers/年份/*.md\`，然后运行 \`node generate-notes.mjs\` 同步首页、方向索引和 MkDocs 导航。无法由一手来源确认的字段保留为 \`Not verified\`。
+`, "utf8");
 
 fs.mkdirSync(path.join(docsDir, "directions"), { recursive: true });
 for (const [direction, info] of Object.entries(directionInfo)) {

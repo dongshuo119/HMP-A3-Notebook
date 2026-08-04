@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Zan Wang; Yixin Chen; Baoxiong Jia; Puhao Li; Jinlu Zhang; Jingze Zhang; Tengyu Liu; Yixin Zhu; Wei Liang; Siyuan Huang |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Move_as_You_Say_Interact_as_You_Can_Language-guided_Human_CVPR_2024_paper.html) |
-| Code | [Official repository](https://github.com/afford-motion/afford-motion) |
+| Title | Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HumanML3D; HUMANISE; curated unseen-scene evaluation set |
+| Open Source | Yes |
+| Main Authors | Zan Wang; Yixin Chen; Baoxiong Jia; Puhao Li; Jinlu Zhang; Jingze Zhang; Tengyu Liu; Yixin Zhu; Wei Liang; Siyuan Huang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Move_as_You_Say_Interact_as_You_Can_Language-guided_Human_CVPR_2024_paper.html) |
+| GitHub Link | [Official repository](https://github.com/afford-motion/afford-motion) |
 | Project Page | [AffordMotion project page](https://afford-motion.github.io/) |
+| Code / Resources | [Official repository](https://github.com/afford-motion/afford-motion) |
 | Dataset | HumanML3D; HUMANISE; curated unseen-scene evaluation set |
 | Task | Language-guided human motion generation in 3D scenes |
 | Input | Text description and a 3D scene point cloud |
@@ -21,8 +27,20 @@
 | Context Type | Language; scene geometry; learned affordance map |
 | Method Family | Two-stage diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Wang_2024_CVPR,
+    author    = {Wang, Zan and Chen, Yixin and Jia, Baoxiong and Li, Puhao and Zhang, Jinlu and Zhang, Jingze and Liu, Tengyu and Zhu, Yixin and Liang, Wei and Huang, Siyuan},
+    title     = {Move as You Say Interact as You Can: Language-guided Human Motion Generation with Scene Affordance},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {433-444}
+}
+```
+
+## Problem
 Directly learning the joint distribution of language, sparse 3D-scene data, and motion is difficult and generalizes poorly to new scene-description pairs.
 
 ## Key Idea

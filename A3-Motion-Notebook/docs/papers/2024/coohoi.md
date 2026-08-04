@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jiawei Gao; Ziqin Wang; Zeqi Xiao; Jingbo Wang; Tai Wang; Jinkun Cao; Xiaolin Hu; Si Liu; Jifeng Dai; Jiangmiao Pang |
-| Venue | NeurIPS |
 | Year | 2024 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/918b9487f8ea4661e8ba5a02b2126658-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | CooHOI: Learning Cooperative Human-Object Interaction with Manipulated Object Dynamics |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Human motion priors and simulated multi-humanoid object-transport tasks |
+| Open Source | Not verified |
+| Main Authors | Jiawei Gao; Ziqin Wang; Zeqi Xiao; Jingbo Wang; Tai Wang; Jinkun Cao; Xiaolin Hu; Si Liu; Jifeng Dai; Jiangmiao Pang |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/918b9487f8ea4661e8ba5a02b2126658-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Human motion priors and simulated multi-humanoid object-transport tasks |
 | Task | Cooperative physics-based humanoid-object interaction control |
 | Input | Local humanoid observations and shared manipulated-object dynamics |
@@ -21,8 +27,24 @@
 | Context Type | Teammates; object dynamics; physics |
 | Method Family | Imitation learning plus multi-agent reinforcement learning |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2024_918b9487,
+ author = {Gao, Jiawei and Wang, Ziqin and Xiao, Zeqi and Wang, Jingbo and Wang, Tai and Cao, Jinkun and Hu, Xiaolin and Liu, Si and Dai, Jifeng and Pang, Jiangmiao},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/079017-2532},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {79741--79763},
+ publisher = {Curran Associates, Inc.},
+ title = {CooHOI: Learning Cooperative Human-Object Interaction with Manipulated Object Dynamics},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/918b9487f8ea4661e8ba5a02b2126658-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
+
+## Problem
 Cooperative whole-body object transport lacks multi-person mocap data and is expensive to learn directly with many agents.
 
 ## Key Idea

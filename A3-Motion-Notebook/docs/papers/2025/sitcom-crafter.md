@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Jianqi Chen; Panwen Hu; Xiaojun Chang; Zhenwei Shi; Michael Kampffmeyer; Xiaodan Liang |
-| Venue | ICLR |
 | Year | 2025 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/de3d2bb604cfc43c81edd2a31b257f03-Abstract-Conference.html) |
-| Code | Supplementary files on official proceedings; standalone repository not verified |
+| Title | Sitcom-Crafter: A Plot-Driven Human Motion Generation System in 3D Scenes |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Jianqi Chen; Panwen Hu; Xiaojun Chang; Zhenwei Shi; Michael Kampffmeyer; Xiaodan Liang |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/de3d2bb604cfc43c81edd2a31b257f03-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Supplementary files on official proceedings; standalone repository not verified |
 | Dataset | Not verified |
 | Task | Plot-driven multi-type human motion generation in 3D scenes |
 | Input | Plot text and a 3D scene |
@@ -21,8 +27,22 @@
 | Context Type | Plot/language; 3D scene; multiple people |
 | Method Family | Modular motion-generation and post-processing system |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2025_de3d2bb6,
+ author = {Chen, Jianqi and Hu, Panwen and Chang, Xiaojun and Shi, Zhenwei and Kampffmeyer, Michael and Liang, Xiaodan},
+ booktitle = {International Conference on Learning Representations},
+ editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},
+ pages = {89337--89370},
+ title = {Sitcom-Crafter: A Plot-Driven Human Motion Generation System in 3D Scenes},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/de3d2bb604cfc43c81edd2a31b257f03-Paper-Conference.pdf},
+ volume = {2025},
+ year = {2025}
+}
+```
+
+## Problem
 Specialized generators cover separate motion types but do not create long plot-level sequences that combine locomotion, scene interaction, and social interaction.
 
 ## Key Idea

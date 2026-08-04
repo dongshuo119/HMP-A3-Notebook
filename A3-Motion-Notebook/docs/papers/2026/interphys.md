@@ -8,13 +8,19 @@
 
 | Field | Content |
 |---|---|
-| Authors | Chaoyue Xing; Wei Mao; Miaomiao Liu |
-| Venue | CVPR main conference |
 | Year | 2026 |
+| Title | InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR main conference |
+| Journal | Not applicable (conference paper) |
+| Benchmark | OMOMO; TRUMANS |
+| Open Source | Not verified |
+| Main Authors | Chaoyue Xing; Wei Mao; Miaomiao Liu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_InterPhys_Physics-aware_Human_Motion_Synthesis_in_a_Dynamic_Scene_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Publication Status | Officially published in CVPR 2026 proceedings; CVF Open Access page verified |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Xing_InterPhys_Physics-aware_Human_Motion_Synthesis_in_a_Dynamic_Scene_CVPR_2026_paper.html) |
-| Code | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | OMOMO; TRUMANS |
 | Task | Physics-aware human motion synthesis with moving objects |
 | Input | 3D object motion and a 3D static-scene representation |
@@ -22,8 +28,20 @@
 | Context Type | Dynamic object; static scene; contact forces |
 | Method Family | Two-stage diffusion with differentiable dynamics constraints |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Xing_2026_CVPR,
+    author    = {Xing, Chaoyue and Mao, Wei and Liu, Miaomiao},
+    title     = {InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {30729-30739}
+}
+```
+
+## Problem
 Contact or penetration penalties do not guarantee force and torque balance, especially when a human interacts with a moving object and arbitrary scene surfaces.
 
 ## Key Idea

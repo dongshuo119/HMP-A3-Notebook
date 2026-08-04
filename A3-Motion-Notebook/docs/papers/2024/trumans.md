@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Nan Jiang; Zhiyuan Zhang; Hongjie Li; Xiaoxuan Ma; Zan Wang; Yixin Chen; Tengyu Liu; Yixin Zhu; Siyuan Huang |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Jiang_Scaling_Up_Dynamic_Human-Scene_Interaction_Modeling_CVPR_2024_paper.html) |
-| Code | [Official utilities repository](https://github.com/jnnan/trumans_utils) |
+| Title | Scaling Up Dynamic Human-Scene Interaction Modeling |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | TRUMANS; PROX/Replica/ScanNet/ScanNet++ for generalization |
+| Open Source | Yes |
+| Main Authors | Nan Jiang; Zhiyuan Zhang; Hongjie Li; Xiaoxuan Ma; Zan Wang; Yixin Chen; Tengyu Liu; Yixin Zhu; Siyuan Huang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Jiang_Scaling_Up_Dynamic_Human-Scene_Interaction_Modeling_CVPR_2024_paper.html) |
+| GitHub Link | [Official utilities repository](https://github.com/jnnan/trumans_utils) |
 | Project Page | [TRUMANS project page](https://jnnan.github.io/trumans/) |
+| Code / Resources | [Official utilities repository](https://github.com/jnnan/trumans_utils) |
 | Dataset | TRUMANS; PROX/Replica/ScanNet/ScanNet++ for generalization |
 | Task | Arbitrary-length human-scene interaction synthesis |
 | Input | Local 3D scene context and frame-wise action labels |
@@ -21,8 +27,20 @@
 | Context Type | Scene occupancy; action condition; dynamic object interaction |
 | Method Family | Autoregressive conditional diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Jiang_2024_CVPR,
+    author    = {Jiang, Nan and Zhang, Zhiyuan and Li, Hongjie and Ma, Xiaoxuan and Wang, Zan and Chen, Yixin and Liu, Tengyu and Zhu, Yixin and Huang, Siyuan},
+    title     = {Scaling Up Dynamic Human-Scene Interaction Modeling},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1737-1747}
+}
+```
+
+## Problem
 Human-scene interaction research lacks both high-quality dynamic-contact data and a model that can synthesize controllable, collision-aware motion for arbitrary durations.
 
 ## Key Idea

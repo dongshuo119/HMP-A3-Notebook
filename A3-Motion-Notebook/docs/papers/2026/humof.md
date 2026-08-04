@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Caiyi Sun; Yujing Sun; Xiao Han; Zemin Yang; Jiawei Liu; Xinge Zhu; Siu Ming Yiu; Yuexin Ma |
-| Venue | ICLR |
 | Year | 2026 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0b7f639ef28a9035a71f7e0c04c1d681-Abstract-Conference.html) |
-| Code | [Official GitHub](https://github.com/scy639/HUMOF) |
+| Title | HUMOF: Human Motion Forecasting in Interactive Social Scenes |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Four public datasets; names not verified |
+| Open Source | Yes |
+| Main Authors | Caiyi Sun; Yujing Sun; Xiao Han; Zemin Yang; Jiawei Liu; Xinge Zhu; Siu Ming Yiu; Yuexin Ma |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/0b7f639ef28a9035a71f7e0c04c1d681-Abstract-Conference.html) |
+| GitHub Link | [Official GitHub](https://github.com/scy639/HUMOF) |
 | Project Page | Not verified |
+| Code / Resources | [Official GitHub](https://github.com/scy639/HUMOF) |
 | Dataset | Four public datasets; names not verified |
 | Task | Human motion forecasting in dynamic interactive scenes |
 | Input | Observed human motion, other people, and environmental interaction features |
@@ -21,8 +27,22 @@
 | Context Type | Human-human; human-environment; dynamic scene |
 | Method Family | Hierarchical interaction reasoning in spatial and frequency domains |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2026_0b7f639e,
+ author = {Sun, Caiyi and SUN, YUJING and Han, Xiao and Yang, Zemin and Liu, Jiawei and zhu, xinge and Yiu, Siu Ming and Ma, Yuexin},
+ booktitle = {International Conference on Learning Representations},
+ editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},
+ pages = {6511--6534},
+ title = {HUMOF: Human Motion Forecasting in Interactive Social Scenes},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/0b7f639ef28a9035a71f7e0c04c1d681-Paper-Conference.pdf},
+ volume = {2026},
+ year = {2026}
+}
+```
+
+## Problem
 Dynamic social scenes contain global interaction structure and fine local cues that create substantial forecast uncertainty.
 
 ## Key Idea

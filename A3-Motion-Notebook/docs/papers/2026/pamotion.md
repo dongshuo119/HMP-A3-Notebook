@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yan Di; Yuheng Li; Yaoxing Wang; Mengge Liu; Shan Gao; Xiangyang Ji |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Di_PAMotion_Physics-Aware_Motion_Generation_for_Full-Body_Interaction_with_Multiple_Objects_CVPR_2026_paper.html) |
-| Code | [Official GitHub](https://github.com/liyuheng520/PAMotion) |
+| Title | PAMotion: Physics-Aware Motion Generation for Full-Body Interaction with Multiple Objects |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HIMO; ParaHome |
+| Open Source | Yes |
+| Main Authors | Yan Di; Yuheng Li; Yaoxing Wang; Mengge Liu; Shan Gao; Xiangyang Ji |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Di_PAMotion_Physics-Aware_Motion_Generation_for_Full-Body_Interaction_with_Multiple_Objects_CVPR_2026_paper.html) |
+| GitHub Link | [Official GitHub](https://github.com/liyuheng520/PAMotion) |
 | Project Page | Not verified |
+| Code / Resources | [Official GitHub](https://github.com/liyuheng520/PAMotion) |
 | Dataset | HIMO; ParaHome |
 | Task | Text-conditioned full-body multi-object interaction generation |
 | Input | Text and multiple object states |
@@ -21,8 +27,20 @@
 | Context Type | Language; multiple objects; contact physics |
 | Method Family | Physics-aware coarse-to-fine diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Di_2026_CVPR,
+    author    = {Di, Yan and Li, Yuheng and Wang, Yaoxing and Liu, Mengge and Gao, Shan and Ji, Xiangyang},
+    title     = {PAMotion: Physics-Aware Motion Generation for Full-Body Interaction with Multiple Objects},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {30661-30674}
+}
+```
+
+## Problem
 Joint diffusion of people and several objects often misses hand contacts and produces physically inconsistent object dynamics.
 
 ## Key Idea

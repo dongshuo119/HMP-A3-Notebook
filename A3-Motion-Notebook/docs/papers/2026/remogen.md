@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yaoqin Ye; Yiteng Xu; Qin Sun; Xinge Zhu; Yujing Sun; Yuexin Ma |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ye_ReMoGen_Real-time_Human_Interaction-to-Reaction_Generation_via_Modular_Learning_from_Diverse_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Heterogeneous single-person, human-human, and human-scene datasets; names not verified |
+| Open Source | Not verified |
+| Main Authors | Yaoqin Ye; Yiteng Xu; Qin Sun; Xinge Zhu; Yujing Sun; Yuexin Ma |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ye_ReMoGen_Real-time_Human_Interaction-to-Reaction_Generation_via_Modular_Learning_from_Diverse_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Heterogeneous single-person, human-human, and human-scene datasets; names not verified |
 | Task | Online future reaction-motion generation |
 | Input | Other agents' actions, scene geometry, observed ego motion, and optional semantics |
@@ -21,8 +27,20 @@
 | Context Type | Other people; 3D scene; optional high-level semantics; streaming cues |
 | Method Family | Modular motion prior with online segment refinement |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Ye_2026_CVPR,
+    author    = {Ye, Yaoqin and Xu, Yiteng and Sun, Qin and Zhu, Xinge and Sun, Yujing and Ma, Yuexin},
+    title     = {ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {16475-16485}
+}
+```
+
+## Problem
 Reaction data are fragmented across domains, while real-time systems must incorporate newly arriving cues without regenerating long sequences.
 
 ## Key Idea

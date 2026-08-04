@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Xiaoning Sun; Huaijiang Sun; Bin Li; Dong Wei; Weiqing Li; Jianfeng Lu |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Sun_MoML_Online_Meta_Adaptation_for_3D_Human_Motion_Prediction_CVPR_2024_paper.html) |
-| Code | Not verified |
+| Title | MoML: Online Meta Adaptation for 3D Human Motion Prediction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Xiaoning Sun; Huaijiang Sun; Bin Li; Dong Wei; Weiqing Li; Jianfeng Lu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Sun_MoML_Online_Meta_Adaptation_for_3D_Human_Motion_Prediction_CVPR_2024_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Online-adaptive 3D human motion prediction |
 | Input | Observed motion and errors from recent online predictions |
@@ -21,8 +27,20 @@
 | Context Type | Temporal motion context; online error feedback |
 | Method Family | Model-agnostic meta-learning and online adaptation |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Sun_2024_CVPR,
+    author    = {Sun, Xiaoning and Sun, Huaijiang and Li, Bin and Wei, Dong and Li, Weiqing and Lu, Jianfeng},
+    title     = {MoML: Online Meta Adaptation for 3D Human Motion Prediction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {1042-1051}
+}
+```
+
+## Problem
 Fixed offline predictors cannot adapt their parameters to changing motion patterns at deployment time.
 
 ## Key Idea

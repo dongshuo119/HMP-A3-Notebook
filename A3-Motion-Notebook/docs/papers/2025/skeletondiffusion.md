@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Cecilia Curreli; Dominik Muhle; Abhishek Saroha; Zhenzhang Ye; Riccardo Marin; Daniel Cremers |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Curreli_Nonisotropic_Gaussian_Diffusion_for_Realistic_3D_Human_Motion_Prediction_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Three real-world datasets; names not verified |
+| Open Source | Not verified |
+| Main Authors | Cecilia Curreli; Dominik Muhle; Abhishek Saroha; Zhenzhang Ye; Riccardo Marin; Daniel Cremers |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Curreli_Nonisotropic_Gaussian_Diffusion_for_Realistic_3D_Human_Motion_Prediction_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | [Official project page](https://ceveloper.github.io/publications/skeletondiffusion/) |
+| Code / Resources | Not verified |
 | Dataset | Three real-world datasets; names not verified |
 | Task | Stochastic 3D human motion prediction |
 | Input | Observed 3D human motion |
@@ -21,8 +27,20 @@
 | Context Type | Motion history; skeletal kinematic structure |
 | Method Family | Nonisotropic latent diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Curreli_2025_CVPR,
+    author    = {Curreli, Cecilia and Muhle, Dominik and Saroha, Abhishek and Ye, Zhenzhang and Marin, Riccardo and Cremers, Daniel},
+    title     = {Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {1871-1882}
+}
+```
+
+## Problem
 Stochastic predictors can score as diverse while producing jitter, stretching limbs, or changing bone lengths.
 
 ## Key Idea

@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yuan Wang; Yali Li; Xiang Li; Shengjin Wang |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_HSI-GPT_A_General-Purpose_Large_Scene-Motion-Language_Model_for_Human_Scene_Interaction_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | HSI-GPT: A General-Purpose Large Scene-Motion-Language Model for Human Scene Interaction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HumanML3D; HUMANISE; PROX |
+| Open Source | Not verified |
+| Main Authors | Yuan Wang; Yali Li; Xiang Li; Shengjin Wang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_HSI-GPT_A_General-Purpose_Large_Scene-Motion-Language_Model_for_Human_Scene_Interaction_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | HumanML3D; HUMANISE; PROX |
 | Task | Unified HSI generation, completion, captioning, and multimodal control |
 | Input | Instruction prompt containing text, scene, affordance, and/or motion tokens |
@@ -21,8 +27,20 @@
 | Context Type | Language; 3D scene; affordance; key-frame motion |
 | Method Family | Instruction-tuned multimodal large language model |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Wang_2025_CVPR,
+    author    = {Wang, Yuan and Li, Yali and Li, Xiang and Wang, Shengjin},
+    title     = {HSI-GPT: A General-Purpose Large Scene-Motion-Language Model for Human Scene Interaction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {7147-7157}
+}
+```
+
+## Problem
 Task-specific HSI models accept fixed control modalities and do not readily transfer between generation, completion, and understanding tasks.
 
 ## Key Idea

@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Pablo Ruiz-Ponce; Sergio Escalera; José García-Rodríguez; Jiankang Deng; Rolandos Alexandros Potamias |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ruiz-Ponce_Interact2Ar_Full-Body_Human-Human_Interaction_Generation_via_Autoregressive_Diffusion_Models_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | Interact2Ar: Full-Body Human-Human Interaction Generation via Autoregressive Diffusion Models |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Pablo Ruiz-Ponce; Sergio Escalera; José García-Rodríguez; Jiankang Deng; Rolandos Alexandros Potamias |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ruiz-Ponce_Interact2Ar_Full-Body_Human-Human_Interaction_Generation_via_Autoregressive_Diffusion_Models_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Text-conditioned full-body human-human interaction generation |
 | Input | Text and autoregressive interaction history |
@@ -21,8 +27,20 @@
 | Context Type | Language; human-human interaction; long motion history |
 | Method Family | Autoregressive diffusion with hand branches and memory |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Ruiz-Ponce_2026_CVPR,
+    author    = {Ruiz-Ponce, Pablo and Escalera, Sergio and Garc{\'\i}a-Rodr{\'\i}guez, Jos\'e and Deng, Jiankang and Potamias, Rolandos Alexandros},
+    title     = {Interact2Ar: Full-Body Human-Human Interaction Generation via Autoregressive Diffusion Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {23559-23569}
+}
+```
+
+## Problem
 Whole-sequence diffusion is weak at reactive adaptation, and existing interaction datasets and models often omit detailed hands.
 
 ## Key Idea

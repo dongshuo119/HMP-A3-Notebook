@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yuan Wang; Xiang Li; Yali Li; Xuege Hou; Shengjin Wang |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_HSI-GPT2_A_Dual-Granularity_Large_Motion_Reasoning_Model_with_Diffusion_Refinement_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | HSI-GPT2: A Dual-Granularity Large Motion Reasoning Model with Diffusion Refinement for Human-Scene Interaction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Standard HSI benchmarks; names not verified |
+| Open Source | Not verified |
+| Main Authors | Yuan Wang; Xiang Li; Yali Li; Xuege Hou; Shengjin Wang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_HSI-GPT2_A_Dual-Granularity_Large_Motion_Reasoning_Model_with_Diffusion_Refinement_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Standard HSI benchmarks; names not verified |
 | Task | Human-scene motion understanding, reasoning, and generation |
 | Input | 3D scene, language command, and task-dependent motion context |
@@ -21,8 +27,20 @@
 | Context Type | Language; 3D scene; chain-of-thought task semantics |
 | Method Family | Large scene-motion-language model with diffusion decoder and RL |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Wang_2026_CVPR,
+    author    = {Wang, Yuan and Li, Xiang and Li, Yali and Hou, Xuege and Wang, Shengjin},
+    title     = {HSI-GPT2: A Dual-Granularity Large Motion Reasoning Model with Diffusion Refinement for Human-Scene Interaction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {16432-16442}
+}
+```
+
+## Problem
 A single motion codebook can trade semantics against detail, while supervised fine-tuning alone struggles with long compositional HSI commands.
 
 ## Key Idea

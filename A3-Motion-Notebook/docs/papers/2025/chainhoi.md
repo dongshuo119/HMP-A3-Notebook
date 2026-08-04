@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Ling-An Zeng; Guohong Huang; Yi-Lin Wei; Shengbo Gu; Yu-Ming Tang; Jingke Meng; Wei-Shi Zheng |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_ChainHOI_Joint-based_Kinematic_Chain_Modeling_for_Human-Object_Interaction_Generation_CVPR_2025_paper.html) |
-| Code | [Official repository](https://github.com/qinghuannn/ChainHOI) |
+| Title | ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | BEHAVE; OMOMO |
+| Open Source | Yes |
+| Main Authors | Ling-An Zeng; Guohong Huang; Yi-Lin Wei; Shengbo Gu; Yu-Ming Tang; Jingke Meng; Wei-Shi Zheng |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_ChainHOI_Joint-based_Kinematic_Chain_Modeling_for_Human-Object_Interaction_Generation_CVPR_2025_paper.html) |
+| GitHub Link | [Official repository](https://github.com/qinghuannn/ChainHOI) |
 | Project Page | Not verified |
+| Code / Resources | [Official repository](https://github.com/qinghuannn/ChainHOI) |
 | Dataset | BEHAVE; OMOMO |
 | Task | Text-driven human-object interaction generation |
 | Input | Text description and target-object geometry |
@@ -21,8 +27,20 @@
 | Context Type | Language; object geometry; joint/object relations |
 | Method Family | Generative spatiotemporal GCN plus kinematic-chain Transformer |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Zeng_2025_CVPR,
+    author    = {Zeng, Ling-An and Huang, Guohong and Wei, Yi-Lin and Gu, Shengbo and Tang, Yu-Ming and Meng, Jingke and Zheng, Wei-Shi},
+    title     = {ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {12358-12369}
+}
+```
+
+## Problem
 Full-body pose tokens model body-object relations only implicitly, making fine joint contacts and coordinated kinetic-chain motion difficult to learn.
 
 ## Key Idea

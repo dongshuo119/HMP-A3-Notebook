@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Hsin-Ping Huang; Yang Zhou; Jui-Hsien Wang; Difan Liu; Feng Liu; Ming-Hsuan Yang; Zhan Xu |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Move-in-2D_2D-Conditioned_Human_Motion_Generation_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | Move-in-2D: 2D-Conditioned Human Motion Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HiC-Motion, collected from internal open-domain video data |
+| Open Source | Not verified |
+| Main Authors | Hsin-Ping Huang; Yang Zhou; Jui-Hsien Wang; Difan Liu; Feng Liu; Ming-Hsuan Yang; Zhan Xu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Move-in-2D_2D-Conditioned_Human_Motion_Generation_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | [Move-in-2D project page](https://hhsinping.github.io/Move-in-2D/) |
+| Code / Resources | Not verified |
 | Dataset | HiC-Motion, collected from internal open-domain video data |
 | Task | 2D-scene- and text-conditioned 3D human motion generation |
 | Input | A scene image and text prompt |
@@ -21,8 +27,20 @@
 | Context Type | 2D visual scene; language |
 | Method Family | Conditional diffusion Transformer |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Huang_2025_CVPR,
+    author    = {Huang, Hsin-Ping and Zhou, Yang and Wang, Jui-Hsien and Liu, Difan and Liu, Feng and Yang, Ming-Hsuan and Xu, Zhan},
+    title     = {Move-in-2D: 2D-Conditioned Human Motion Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {22766-22775}
+}
+```
+
+## Problem
 Requiring reconstructed 3D scenes limits scene-aware generation, while reusing a driving motion sequence restricts video generation to motions already captured elsewhere.
 
 ## Key Idea

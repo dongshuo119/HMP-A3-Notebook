@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Haipeng Chen; Kedi Lyu; Zhenguang Liu; Yifang Yin; Xun Yang; Yingda Lyu |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Rethinking_Human_Motion_Prediction_with_Symplectic_Integral_CVPR_2024_paper.html) |
-| Code | Not verified |
+| Title | Rethinking Human Motion Prediction with Symplectic Integral |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Human3.6M; CMU Mocap; 3DPW |
+| Open Source | Not verified |
+| Main Authors | Haipeng Chen; Kedi Lyu; Zhenguang Liu; Yifang Yin; Xun Yang; Yingda Lyu |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Rethinking_Human_Motion_Prediction_with_Symplectic_Integral_CVPR_2024_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Human3.6M; CMU Mocap; 3DPW |
 | Task | Stable long-term 3D human motion prediction |
 | Input | Observed 3D pose sequence |
@@ -21,8 +27,20 @@
 | Context Type | Motion history only |
 | Method Family | Symplectic/Hamiltonian dynamics-inspired prediction |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Chen_2024_CVPR,
+    author    = {Chen, Haipeng and Lyu, Kedi and Liu, Zhenguang and Yin, Yifang and Yang, Xun and Lyu, Yingda},
+    title     = {Rethinking Human Motion Prediction with Symplectic Integral},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {2134-2143}
+}
+```
+
+## Problem
 Prediction errors grow sharply with the horizon because of numerical and modeling instability.
 
 ## Key Idea

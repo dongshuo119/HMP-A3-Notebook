@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Zichen Geng; Zeeshan Hayder; Bo Miao; Jian Liu; Wei Liu; Ajmal Mian |
-| Venue | ICLR |
 | Year | 2026 |
-| Paper | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICLR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Zichen Geng; Zeeshan Hayder; Bo Miao; Jian Liu; Wei Liu; Ajmal Mian |
+| Paper Link | [ICLR Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ffd4f5a2ea6b93e9bf5af9264d568cf2-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Text-conditioned 3D human-human interaction generation |
 | Input | Interaction text/condition |
@@ -21,8 +27,22 @@
 | Context Type | Language; human-human interaction; contact semantics |
 | Method Family | Disentangled hierarchical VAE plus latent diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{ICLR2026_ffd4f5a2,
+ author = {Geng, Zichen and Hayder, Zeeshan and Miao, Bo and Liu, Jian and Liu, Wei and Mian, Ajmal},
+ booktitle = {International Conference on Learning Representations},
+ editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},
+ pages = {157639--157662},
+ title = {Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation},
+ url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/ffd4f5a2ea6b93e9bf5af9264d568cf2-Paper-Conference.pdf},
+ volume = {2026},
+ year = {2026}
+}
+```
+
+## Problem
 A single latent code can entangle global interaction semantics with individual motion, causing missed contacts, penetration, and semantic errors.
 
 ## Key Idea

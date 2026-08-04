@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Lingxiao Li; Dongwon Kim; Lingyan Ruan; Bin Chen; Taesoo Kwon; Taehyun Rhee |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Li_SyncMos_Scalable_Motion_Synchronisation_for_Multi-Agent_Scene_Interaction_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | SyncMos: Scalable Motion Synchronisation for Multi-Agent Scene Interaction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Lingxiao Li; Dongwon Kim; Lingyan Ruan; Bin Chen; Taesoo Kwon; Taehyun Rhee |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Li_SyncMos_Scalable_Motion_Synchronisation_for_Multi-Agent_Scene_Interaction_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Text-guided synchronized multi-agent motion in 3D scenes |
 | Input | Natural-language interaction instruction and a 3D scene |
@@ -21,8 +27,20 @@
 | Context Type | Language; scene; multi-agent event dependencies |
 | Method Family | Story planning plus diffusion posterior control |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Li_2026_CVPR,
+    author    = {Li, Lingxiao and Kim, Dongwon and Ruan, Lingyan and Chen, Bin and Kwon, Taesoo and Rhee, Taehyun},
+    title     = {SyncMos: Scalable Motion Synchronisation for Multi-Agent Scene Interaction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {8174-8182}
+}
+```
+
+## Problem
 Independent single-agent generators do not reliably preserve causal order and shared event timing across many agents.
 
 ## Key Idea

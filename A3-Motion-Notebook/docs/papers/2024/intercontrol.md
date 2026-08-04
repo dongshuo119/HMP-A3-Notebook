@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Zhenzhi Wang; Jingbo Wang; Yixuan Li; Dahua Lin; Bo Dai |
-| Venue | NeurIPS |
 | Year | 2024 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/be41269a9fe258f1ecba663b0b402322-Abstract-Conference.html) |
-| Code | [Official repository](https://github.com/zhenzhiwang/intercontrol) |
+| Title | InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | HumanML3D; KIT-ML; InterHuman prompts for interaction evaluation |
+| Open Source | Yes |
+| Main Authors | Zhenzhi Wang; Jingbo Wang; Yixuan Li; Dahua Lin; Bo Dai |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/be41269a9fe258f1ecba663b0b402322-Abstract-Conference.html) |
+| GitHub Link | [Official repository](https://github.com/zhenzhiwang/intercontrol) |
 | Project Page | Not verified |
+| Code / Resources | [Official repository](https://github.com/zhenzhiwang/intercontrol) |
 | Dataset | HumanML3D; KIT-ML; InterHuman prompts for interaction evaluation |
 | Task | Zero-shot multi-person interaction generation |
 | Input | Single-person motion prior plus joint-position/contact constraints, optionally derived from text by an LLM |
@@ -21,8 +27,24 @@
 | Context Type | Other people; joint contacts/distances; language-derived constraints |
 | Method Family | Diffusion ControlNet plus inverse-kinematics guidance |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2024_be41269a,
+ author = {Wang, Zhenzhi and Wang, Jingbo and Li, Yixuan and Lin, Dahua and Dai, Bo},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/079017-3345},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {105397--105424},
+ publisher = {Curran Associates, Inc.},
+ title = {InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/be41269a9fe258f1ecba663b0b402322-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
+
+## Problem
 Models trained for a fixed number of people do not naturally scale to larger groups, while single-person generators cannot ensure that corresponding joints meet in global space.
 
 ## Key Idea

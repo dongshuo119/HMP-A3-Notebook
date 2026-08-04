@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Wenkun He; Yun Liu; Ruitao Liu; Li Yi |
-| Venue | ICCV |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/He_SyncDiff_Synchronized_Motion_Diffusion_for_Multi-Body_Human-Object_Interaction_Synthesis_ICCV_2025_paper.html) |
-| Code | Not verified |
+| Title | SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | ICCV |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Five datasets with different human/hand/object configurations; names not verified |
+| Open Source | Not verified |
+| Main Authors | Wenkun He; Yun Liu; Ruitao Liu; Li Yi |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/He_SyncDiff_Synchronized_Motion_Diffusion_for_Multi-Body_Human-Object_Interaction_Synthesis_ICCV_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Five datasets with different human/hand/object configurations; names not verified |
 | Task | Multi-body human-object interaction motion synthesis |
 | Input | A variable set of humans, hands, and objects with interaction conditions |
@@ -21,8 +27,20 @@
 | Context Type | Human-object; human-human; variable body graph |
 | Method Family | Graphical-model synchronized diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{He_2025_ICCV,
+    author    = {He, Wenkun and Liu, Yun and Liu, Ruitao and Yi, Li},
+    title     = {SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {11731-11743}
+}
+```
+
+## Problem
 Arbitrary numbers of moving humans, hands, and objects must remain synchronized, while subtle high-frequency contacts can be dominated by larger low-frequency motion.
 
 ## Key Idea

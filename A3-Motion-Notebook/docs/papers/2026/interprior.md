@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Sirui Xu; Samuel Schulter; Morteza Ziyadi; Xialin He; Xiaohan Fei; Yu-Xiong Wang; Liang-Yan Gui |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Xu_InterPrior_Scaling_Generative_Control_for_Physics-Based_Human-Object_Interactions_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Large-scale imitation data; names not verified |
+| Open Source | Not verified |
+| Main Authors | Sirui Xu; Samuel Schulter; Morteza Ziyadi; Xialin He; Xiaohan Fei; Yu-Xiong Wang; Liang-Yan Gui |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Xu_InterPrior_Scaling_Generative_Control_for_Physics-Based_Human-Object_Interactions_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Large-scale imitation data; names not verified |
 | Task | Goal-conditioned physics-based whole-body human-object control |
 | Input | Multimodal observations and high-level affordance/goal intent |
@@ -21,8 +27,20 @@
 | Context Type | Object; affordance goal; physics; user control |
 | Method Family | Imitation-distilled variational policy plus RL post-training |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Xu_2026_CVPR,
+    author    = {Xu, Sirui and Schulter, Samuel and Ziyadi, Morteza and He, Xialin and Fei, Xiaohan and Wang, Yu-Xiong and Gui, Liang-Yan},
+    title     = {InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {23516-23527}
+}
+```
+
+## Problem
 High-level goals should produce balance, contact, and manipulation without requiring users to specify every body joint, including for unseen objects and initial states.
 
 ## Key Idea

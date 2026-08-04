@@ -8,18 +8,31 @@
 
 | Field | Content |
 |---|---|
-| Authors | Not verified |
-| Venue | Not verified |
 | Year | Not verified |
-| Paper | Not verified |
-| Code | Not verified |
+| Title | Paper Title |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | Not verified |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Not verified |
+| Open Source | Not verified |
+| Main Authors | Not verified |
+| Paper Link | Not verified |
+| GitHub Link | Not verified |
+| Publication Status | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Not verified |
 | Task | Not verified |
 | Input | Not verified |
 | Output | Not verified |
 | Context Type | Not verified |
 | Method Family | Not verified |
+
+## BibTeX
+
+```bibtex
+Not verified
+```
 
 ## Problem
 

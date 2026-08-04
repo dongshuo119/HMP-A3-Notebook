@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Tuo Wang; Zhenbo Song; Zhenyu Lou; Qiongjie Cui; Luoming Zhang; Cheng Cheng; Haofan Wang; Xu Tang; Huaxia Li; Hong Zhou |
-| Venue | NeurIPS |
 | Year | 2024 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4620a66570e554a3ff0e39dc59bcb07a-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | Harmonizing Stochasticity and Determinism: Scene-responsive Diverse Human Motion Prediction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | GIMO; CIRCLE |
+| Open Source | Not verified |
+| Main Authors | Tuo Wang; Zhenbo Song; Zhenyu Lou; Qiongjie Cui; Luoming Zhang; Cheng Cheng; Haofan Wang; Xu Tang; Huaxia Li; Hong Zhou |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4620a66570e554a3ff0e39dc59bcb07a-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | [DiMoP3D project page](https://sites.google.com/view/dimop3d) |
+| Code / Resources | Not verified |
 | Dataset | GIMO; CIRCLE |
 | Task | Diverse future human motion prediction in 3D scenes |
 | Input | Observed human motion and a 3D scene point cloud |
@@ -21,8 +27,24 @@
 | Context Type | 3D scene geometry; candidate interaction objects |
 | Method Family | Scene-conditioned diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2024_4620a665,
+ author = {Wang, Tuo and Song, Zhenbo and Lou, Zhenyu and Cui, Qiongjie and Zhang, Luoming and Cheng, Cheng and Wang, Haofan and Tang, Xu and Li, Huaxia and Zhou, Hong},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/079017-1256},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {39784--39811},
+ publisher = {Curran Associates, Inc.},
+ title = {Harmonizing Stochasticity and Determinism: Scene-responsive Diverse Human Motion Prediction},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/4620a66570e554a3ff0e39dc59bcb07a-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
+
+## Problem
 Diverse prediction must model stochastic human futures while obeying deterministic scene constraints such as collision avoidance and semantically valid object interaction.
 
 ## Key Idea

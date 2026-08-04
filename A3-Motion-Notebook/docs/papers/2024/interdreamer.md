@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Sirui Xu; Ziyin Wang; Yu-Xiong Wang; Liang-Yan Gui |
-| Venue | NeurIPS |
 | Year | 2024 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5eca2e4fe7858cbbfef4e08573cfcb25-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | BEHAVE; OMOMO; CHAIRS |
+| Open Source | Not verified |
+| Main Authors | Sirui Xu; Ziyin Wang; Yu-Xiong Wang; Liang-Yan Gui |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5eca2e4fe7858cbbfef4e08573cfcb25-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | [InterDreamer project page](https://sirui-xu.github.io/InterDreamer/) |
+| Code / Resources | Not verified |
 | Dataset | BEHAVE; OMOMO; CHAIRS |
 | Task | Zero-shot text-guided dynamic human-object interaction generation |
 | Input | Text instruction, object geometry/initial state, and pretrained semantic priors |
@@ -21,8 +27,24 @@
 | Context Type | Language; dynamic object; learned interaction dynamics |
 | Method Family | LLM and text-to-motion planning plus learned world model |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2024_5eca2e4f,
+ author = {Xu, Sirui and Wang, Ziyin and Wang, Yu-Xiong and Gui, Liang-Yan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/079017-1675},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {52858--52890},
+ publisher = {Curran Associates, Inc.},
+ title = {InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/5eca2e4fe7858cbbfef4e08573cfcb25-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
+
+## Problem
 Paired text-interaction datasets are too small to directly reproduce the scale of text-to-motion training, especially when both human and object dynamics must be generated.
 
 ## Key Idea

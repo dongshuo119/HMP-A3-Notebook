@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Shengchuan Gao; Shuo Wang; Yabiao Wang; Ran Yi |
-| Venue | NeurIPS |
 | Year | 2025 |
-| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/021cb5673294bef0cda68cb6a740213b-Abstract-Conference.html) |
-| Code | Not verified |
+| Title | WaveAR: Wavelet-Aware Continuous Autoregressive Diffusion for Accurate Human Motion Prediction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | NeurIPS |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Standard SHMP benchmarks; names not verified |
+| Open Source | Not verified |
+| Main Authors | Shengchuan Gao; Shuo Wang; Yabiao Wang; Ran Yi |
+| Paper Link | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2025/hash/021cb5673294bef0cda68cb6a740213b-Abstract-Conference.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Standard SHMP benchmarks; names not verified |
 | Task | Stochastic 3D human motion prediction |
 | Input | Short observed 3D joint sequence |
@@ -21,8 +27,23 @@
 | Context Type | Motion history; multiscale frequency context |
 | Method Family | Continuous autoregressive latent diffusion |
 
-## Problem
+## BibTeX
 
+```bibtex
+@inproceedings{NEURIPS2025_021cb567,
+ author = {gao, shengchuan and Wang, Shuo and Wang, Yabiao and Yi, Ran},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ pages = {1325--1349},
+ publisher = {Curran Associates, Inc.},
+ title = {WaveAR: Wavelet-Aware Continuous Autoregressive Diffusion for Accurate Human Motion Prediction},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/021cb5673294bef0cda68cb6a740213b-Paper-Conference.pdf},
+ volume = {38},
+ year = {2025}
+}
+```
+
+## Problem
 Vector-quantized autoregressive tokens can reduce motion fidelity and destabilize training.
 
 ## Key Idea

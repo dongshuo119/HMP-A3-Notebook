@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Ting Yu; Yi Lin; Jun Yu; Zhenyu Lou; Qiongjie Cui |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Vision-Guided_Action_Enhancing_3D_Human_Motion_Prediction_with_Gaze-informed_Affordance_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance in 3D Scenes |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | GIMO; GTA-IM |
+| Open Source | Not verified |
+| Main Authors | Ting Yu; Yi Lin; Jun Yu; Zhenyu Lou; Qiongjie Cui |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Vision-Guided_Action_Enhancing_3D_Human_Motion_Prediction_with_Gaze-informed_Affordance_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | GIMO; GTA-IM |
 | Task | Future 3D human pose and trajectory prediction |
 | Input | Observed motion, gaze, and a 3D scene point cloud |
@@ -21,8 +27,20 @@
 | Context Type | Gaze/intention; object affordance; 3D scene |
 | Method Family | Affordance-aware scene-conditioned predictor |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Yu_2025_CVPR,
+    author    = {Yu, Ting and Lin, Yi and Yu, Jun and Lou, Zhenyu and Cui, Qiongjie},
+    title     = {Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance in 3D Scenes},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {12335-12346}
+}
+```
+
+## Problem
 Gaze coordinates indicate where a person looks but not what interaction the observed object affords, which can leave predicted endpoint poses semantically or physically incorrect.
 
 ## Key Idea

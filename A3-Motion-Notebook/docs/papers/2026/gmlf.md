@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Yue Ma; Frederick W. B. Li; Xiaohui Liang |
-| Venue | CVPR |
 | Year | 2026 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Gaussian-Mixture_Latent_Flow_for_Stochastic_3D_Human_Motion_Prediction_CVPR_2026_paper.html) |
-| Code | Not verified |
+| Title | Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Human3.6M; AMASS |
+| Open Source | Not verified |
+| Main Authors | Yue Ma; Frederick W. B. Li; Xiaohui Liang |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Gaussian-Mixture_Latent_Flow_for_Stochastic_3D_Human_Motion_Prediction_CVPR_2026_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Human3.6M; AMASS |
 | Task | Stochastic 3D human motion prediction with uncertainty estimation |
 | Input | Observed 3D motion |
@@ -21,8 +27,20 @@
 | Context Type | Motion history only |
 | Method Family | Invertible latent flow with learned Gaussian mixture prior |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Ma_2026_CVPR,
+    author    = {Ma, Yue and Li, Frederick W. B. and Liang, Xiaohui},
+    title     = {Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {7131-7141}
+}
+```
+
+## Problem
 Accurate and diverse samples can still be physically implausible, and many predictors cannot quantify uncertainty directly.
 
 ## Key Idea

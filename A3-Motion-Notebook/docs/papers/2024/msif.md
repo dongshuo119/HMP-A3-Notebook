@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Zhenyu Lou; Qiongjie Cui; Haofan Wang; Xu Tang; Hong Zhou |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Lou_Multimodal_Sense-Informed_Forecasting_of_3D_Human_Motions_CVPR_2024_paper.html) |
-| Code | [Official repository](https://github.com/kjle6/SIF3D-master) |
+| Title | Multimodal Sense-Informed Forecasting of 3D Human Motions |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | GIMO; GTA-1M |
+| Open Source | Yes |
+| Main Authors | Zhenyu Lou; Qiongjie Cui; Haofan Wang; Xu Tang; Hong Zhou |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Lou_Multimodal_Sense-Informed_Forecasting_of_3D_Human_Motions_CVPR_2024_paper.html) |
+| GitHub Link | [Official repository](https://github.com/kjle6/SIF3D-master) |
 | Project Page | [SIF3D project page](https://sites.google.com/view/cvpr2024sif3d) |
+| Code / Resources | [Official repository](https://github.com/kjle6/SIF3D-master) |
 | Dataset | GIMO; GTA-1M |
 | Task | Future 3D human pose and trajectory prediction |
 | Input | Observed motion, 3D scene point cloud, and human gaze |
@@ -21,8 +27,20 @@
 | Context Type | 3D scene; gaze/intention |
 | Method Family | Multimodal attention-based motion predictor |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Lou_2024_CVPR,
+    author    = {Lou, Zhenyu and Cui, Qiongjie and Wang, Haofan and Tang, Xu and Zhou, Hong},
+    title     = {Multimodal Sense-Informed Forecasting of 3D Human Motions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {2144-2154}
+}
+```
+
+## Problem
 Pose-history-only predictors can ignore environmental constraints and human intent, producing future poses that penetrate the scene or move toward implausible targets.
 
 ## Key Idea

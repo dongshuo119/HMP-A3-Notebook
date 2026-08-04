@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Reyhaneh Hosseininejad; Megh Shukla; Saeed Saadatnejad; Mathieu Salzmann; Alexandre Alahi |
-| Venue | CVPR |
 | Year | 2025 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Hosseininejad_MotionMap_Representing_Multimodality_in_Human_Pose_Forecasting_CVPR_2025_paper.html) |
-| Code | Not verified |
+| Title | MotionMap: Representing Multimodality in Human Pose Forecasting |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | Human3.6M; AMASS |
+| Open Source | Not verified |
+| Main Authors | Reyhaneh Hosseininejad; Megh Shukla; Saeed Saadatnejad; Mathieu Salzmann; Alexandre Alahi |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Hosseininejad_MotionMap_Representing_Multimodality_in_Human_Pose_Forecasting_CVPR_2025_paper.html) |
+| GitHub Link | Not verified |
 | Project Page | Not verified |
+| Code / Resources | Not verified |
 | Dataset | Human3.6M; AMASS |
 | Task | Multimodal 3D human pose forecasting |
 | Input | Observed 3D pose sequence |
@@ -21,8 +27,20 @@
 | Context Type | Motion history only |
 | Method Family | Heatmap-based multimodal forecasting |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Hosseininejad_2025_CVPR,
+    author    = {Hosseininejad, Reyhaneh and Shukla, Megh and Saadatnejad, Saeed and Salzmann, Mathieu and Alahi, Alexandre},
+    title     = {MotionMap: Representing Multimodality in Human Pose Forecasting},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {22680-22689}
+}
+```
+
+## Problem
 Oversampling many futures obscures which modes are likely and may still miss rare but safety-critical possibilities.
 
 ## Key Idea

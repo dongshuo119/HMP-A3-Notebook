@@ -8,12 +8,18 @@
 
 | Field | Content |
 |---|---|
-| Authors | Markos Diomataris; Nikos Athanasiou; Omid Taheri; Xi Wang; Otmar Hilliges; Michael J. Black |
-| Venue | CVPR |
 | Year | 2024 |
-| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Diomataris_WANDR_Intention-guided_Human_Motion_Generation_CVPR_2024_paper.html) |
-| Code | [Official repository](https://github.com/markos-diomataris/wandr) |
+| Title | WANDR: Intention-guided Human Motion Generation |
+| BibTeX | [View official BibTeX](#bibtex) |
+| Conference | CVPR |
+| Journal | Not applicable (conference paper) |
+| Benchmark | AMASS; CIRCLE |
+| Open Source | Yes |
+| Main Authors | Markos Diomataris; Nikos Athanasiou; Omid Taheri; Xi Wang; Otmar Hilliges; Michael J. Black |
+| Paper Link | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Diomataris_WANDR_Intention-guided_Human_Motion_Generation_CVPR_2024_paper.html) |
+| GitHub Link | [Official repository](https://github.com/markos-diomataris/wandr) |
 | Project Page | [WANDR project page](https://wandr.is.tue.mpg.de/) |
+| Code / Resources | [Official repository](https://github.com/markos-diomataris/wandr) |
 | Dataset | AMASS; CIRCLE |
 | Task | Goal-directed locomotion and reaching generation |
 | Input | Initial body pose and a 3D goal position |
@@ -21,8 +27,20 @@
 | Context Type | Spatial goal/intention |
 | Method Family | Conditional variational autoencoder |
 
-## Problem
+## BibTeX
 
+```bibtex
+@InProceedings{Diomataris_2024_CVPR,
+    author    = {Diomataris, Markos and Athanasiou, Nikos and Taheri, Omid and Wang, Xi and Hilliges, Otmar and Black, Michael J.},
+    title     = {WANDR: Intention-guided Human Motion Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {927-936}
+}
+```
+
+## Problem
 An avatar must autonomously combine locomotion, orientation, and reaching to touch arbitrary 3D goals without being given a full path or sub-goals.
 
 ## Key Idea
