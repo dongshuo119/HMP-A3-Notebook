@@ -1,48 +1,60 @@
 # WANDR: Intention-guided Human Motion Generation
 
-> CVPR 2024 · Motion Generation
+> CVPR 2024 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Markos Diomataris et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Intention · Scene</td></tr>
-<tr><td>Method</td><td>Transformer</td></tr>
-<tr><td>Benchmark</td><td>AMASS · CIRCLE</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2024/html/Diomataris_WANDR_Intention-guided_Human_Motion_Generation_CVPR_2024_paper.html)　[Code ↗](https://github.com/markos-diomataris/wandr)</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Markos Diomataris; Nikos Athanasiou; Omid Taheri; Xi Wang; Otmar Hilliges; Michael J. Black |
+| Venue | CVPR |
+| Year | 2024 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Diomataris_WANDR_Intention-guided_Human_Motion_Generation_CVPR_2024_paper.html) |
+| Code | [Official repository](https://github.com/markos-diomataris/wandr) |
+| Project Page | [WANDR project page](https://wandr.is.tue.mpg.de/) |
+| Dataset | AMASS; CIRCLE |
+| Task | Goal-directed locomotion and reaching generation |
+| Input | Initial body pose and a 3D goal position |
+| Output | Human motion that places the wrist at the goal |
+| Context Type | Spatial goal/intention |
+| Method Family | Conditional variational autoencoder |
 
 ## Problem
 
-Generate goal-directed locomotion and reaching without fixed trajectories.
+An avatar must autonomously combine locomotion, orientation, and reaching to touch arbitrary 3D goals without being given a full path or sub-goals.
 
 ## Key Idea
 
-!!! tip
-    Represent intention as spatial targets and synthesize motion that adapts online.
-
-## Input / Output
-
-Motion state + target intention → goal-reaching future motion.
+WANDR introduces intention features that continuously describe how the body, orientation, and wrist should progress toward the goal, allowing goal-directed behavior to be learned from both reaching and general motion data.
 
 ## Method
 
-A learned autoregressive controller models diverse intention-conditioned motion.
+The model is a conditional VAE that predicts subsequent motion from the current state, target position, and intention features. Generation is autoregressive and can update interactively as the goal changes.
 
-## Dataset
+## Contributions
 
-AMASS, CIRCLE
+- Defines intention features for autonomous goal reaching.
+- Combines AMASS with CIRCLE so locomotion and reaching skills can be learned together.
+- Demonstrates generalization to goal positions outside the training distribution.
 
-## Contribution
+## Experiments
 
-Supports flexible, scene-aware reaching from high-level goals.
+The paper evaluates goal success, motion naturalness, long-horizon behavior, and generalization on AMASS/CIRCLE-derived settings. Exact values are intentionally omitted here.
 
-## Limitation
+## Limitations
 
-Targets are simpler than free-form semantic intentions.
+The context is a single 3D target rather than a reconstructed scene or free-form task description. Collision avoidance and object affordances are not the central modeling target.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: resembles goal-conditioned action generation for embodied agents.
+Relevance: Peripheral. WANDR is a goal-conditioned generator rather than a predictor inferred from observed human history, but its intention representation is useful for modeling goal-conditioned futures.
+
+## Relevance to Embodied Intelligence
+
+Minimal goal conditioning and online adaptation closely resemble the control interface required by embodied avatars and humanoids.
+
+## My Notes
+
+TODO: Compare WANDR's explicit intention features with goal tokens used by diffusion-based motion planners.

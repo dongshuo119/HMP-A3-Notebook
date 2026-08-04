@@ -1,48 +1,60 @@
 # Move-in-2D: 2D-Conditioned Human Motion Generation
 
-> CVPR 2025 · Motion Generation
+> CVPR 2025 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2025</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Han-Ping Huang et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Scene · Language</td></tr>
-<tr><td>Method</td><td>Diffusion</td></tr>
-<tr><td>Benchmark</td><td>Move-in-2D</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Move-in-2D_2D-Conditioned_Human_Motion_Generation_CVPR_2025_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Hsin-Ping Huang; Yang Zhou; Jui-Hsien Wang; Difan Liu; Feng Liu; Ming-Hsuan Yang; Zhan Xu |
+| Venue | CVPR |
+| Year | 2025 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Move-in-2D_2D-Conditioned_Human_Motion_Generation_CVPR_2025_paper.html) |
+| Code | Not verified |
+| Project Page | [Move-in-2D project page](https://hhsinping.github.io/Move-in-2D/) |
+| Dataset | HiC-Motion, collected from internal open-domain video data |
+| Task | 2D-scene- and text-conditioned 3D human motion generation |
+| Input | A scene image and text prompt |
+| Output | A 3D human motion sequence aligned after projection into the image |
+| Context Type | 2D visual scene; language |
+| Method Family | Conditional diffusion Transformer |
 
 ## Problem
 
-Generate 3D motion grounded in an ordinary scene image.
+Requiring reconstructed 3D scenes limits scene-aware generation, while reusing a driving motion sequence restricts video generation to motions already captured elsewhere.
 
 ## Key Idea
 
-!!! tip
-    Use 2D scene cues and text as accessible conditions for 3D motion diffusion.
-
-## Input / Output
-
-Single image + text → 3D human motion.
+Learn scene compatibility directly from internet videos so a single background image and text prompt can condition a 3D motion sequence.
 
 ## Method
 
-A conditional diffusion model learns from a large image-aligned motion dataset.
+A diffusion Transformer encodes text with CLIP and scene patches with DINO. The paper compares in-context tokens, cross-attention, and adaptive layer normalization for injecting conditions, then uses a two-stage training strategy to reduce camera-motion bias.
 
-## Dataset
+## Contributions
 
-Move-in-2D
+- Defines 2D-conditioned motion generation from image and language.
+- Constructs the 300K-video HiC-Motion training set with estimated 3D motion.
+- Uses generated motion as control for downstream human-video synthesis.
 
-## Contribution
+## Experiments
 
-Avoids requiring a reconstructed 3D scene at inference time.
+Evaluation uses a held-out HiC-Motion test set with 957 samples and compares text-only and 3D-scene-conditioned baselines. The underlying training data is described as internal and is not independently accessible here.
 
-## Limitation
+## Limitations
 
-Depth ambiguity can cause weak 3D contact and occlusion errors.
+Single-view depth and occlusion remain ambiguous. The training dataset is internally sourced, and no official code repository was verified.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    Medium-high: offers cheap visual grounding but limited metric geometry.
+Relevance: Peripheral. It generates motion rather than predicting from observed motion, but visual scene conditioning is relevant to context-aware reasoning.
+
+## Relevance to Embodied Intelligence
+
+Image-only context lowers sensing requirements, but it lacks the metric geometry and explicit contacts needed for reliable physical execution.
+
+## My Notes
+
+TODO: Check whether image projection consistency correlates with true 3D scene feasibility.

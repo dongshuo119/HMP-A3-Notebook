@@ -1,11 +1,108 @@
 import fs from "node:fs";
-const papers = JSON.parse(fs.readFileSync("papers.json", "utf8"));
-const esc = s => String(s || "").replaceAll("|", "\\|");
-const link = (label, url) => url ? `[${label}](${url})` : "—";
-for (const p of papers) {
-  const dir = `docs/papers/${p.year}`; fs.mkdirSync(dir, { recursive:true });
-  const md = `# ${p.title}\n\n> ${p.venue} ${p.year} · ${p.task}\n\n<table class="paper-meta">\n<tr><td>Year</td><td>${p.year}</td></tr>\n<tr><td>Venue</td><td>${p.venue}</td></tr>\n<tr><td>Authors</td><td>${esc(p.authors)}</td></tr>\n<tr><td>Task</td><td>${p.task}</td></tr>\n<tr><td>Context</td><td>${p.context.join(" · ")}</td></tr>\n<tr><td>Method</td><td>${p.method.join(" · ")}</td></tr>\n<tr><td>Benchmark</td><td>${p.dataset.join(" · ")}</td></tr>\n<tr><td>Links</td><td>${link("Paper ↗",p.paper)}　${link("Code ↗",p.code)}</td></tr>\n</table>\n\n## Problem\n\n${p.problem}\n\n## Key Idea\n\n!!! tip\n    ${p.keyIdea}\n\n## Input / Output\n\n${p.io}\n\n## Method\n\n${p.methodNote}\n\n## Dataset\n\n${p.dataset.join(", ")}\n\n## Contribution\n\n${p.contribution}\n\n## Limitation\n\n${p.limitation}\n\n## Embodied AI Relevance\n\n!!! success\n    ${p.embodied}\n`;
-  fs.writeFileSync(`${dir}/${p.id}.md`, md);
+import path from "node:path";
+
+const docsDir = "docs";
+const papersDir = path.join(docsDir, "papers");
+const directionInfo = {
+  "In-context Human Motion Prediction": {
+    slug: "prediction",
+    intro: "根据已观察的人体运动预测未来运动，并显式利用场景、物体、视线、意图或其他人物作为上下文。",
+  },
+  "Context-aware Human Motion Generation": {
+    slug: "generation",
+    intro: "在语言、场景、物体、社会交互或任务条件下生成人体运动；其中部分工作与未来运动预测相邻，但不等同于预测任务。",
+  },
+};
+
+const markdownFiles = [];
+for (const year of fs.readdirSync(papersDir, { withFileTypes: true })) {
+  if (!year.isDirectory() || !/^20\d{2}$/.test(year.name)) continue;
+  for (const file of fs.readdirSync(path.join(papersDir, year.name))) {
+    if (file.endsWith(".md")) markdownFiles.push(path.join(papersDir, year.name, file));
+  }
 }
-const rows = papers.map(p => `| [${esc(p.title)}](papers/${p.year}/${p.id}.md) | ${p.year} | ${p.venue} | ${p.task.replace("Motion ","")} | ${p.context.join(", ")} |`).join("\n");
-fs.writeFileSync("docs/index.md", `# A3 Human Motion Research\n\n**In-context Human Motion Prediction & Generation · 2024–2026**\n\n> 一册面向 A3 方向的持续更新型研究笔记。以外部场景、物体、交互、语言、意图或机器人上下文为纳入核心。\n\n## 文献总览\n\n| Title | Year | Venue | Task | Context |\n|---|---:|---|---|---|\n${rows}\n\n## 笔记模板\n\n每篇笔记统一记录：Problem、Key Idea、Input / Output、Method、Dataset、Contribution、Limitation 和 Embodied AI Relevance。\n`);
+
+function parsePaper(file) {
+  const source = fs.readFileSync(file, "utf8");
+  const title = source.match(/^#\s+(.+)$/m)?.[1]?.trim();
+  const heading = source.match(/^>\s+(.+?)\s+(20\d{2})\s+·\s+(.+)$/m);
+  const status = source.match(/^>\s+Status:\s+(.+)$/m)?.[1]?.trim() || "Not verified";
+  if (!title || !heading) throw new Error(`Cannot parse title/venue/direction in ${file}`);
+
+  const fields = {};
+  for (const match of source.matchAll(/^\|\s*([^|]+?)\s*\|\s*(.*?)\s*\|$/gm)) {
+    const key = match[1].trim();
+    if (key !== "Field" && key !== "---") fields[key] = match[2].trim();
+  }
+
+  const direction = heading[3].trim();
+  if (!directionInfo[direction]) throw new Error(`Unknown direction '${direction}' in ${file}`);
+  const relative = path.relative(docsDir, file).replaceAll("\\", "/");
+  return {
+    title,
+    venue: heading[1].trim(),
+    year: Number(heading[2]),
+    direction,
+    status,
+    fields,
+    relative,
+  };
+}
+
+const papers = markdownFiles.map(parsePaper).sort((a, b) =>
+  b.year - a.year || a.direction.localeCompare(b.direction) || a.title.localeCompare(b.title)
+);
+
+const countBy = key => Object.entries(
+  papers.reduce((counts, paper) => {
+    const value = typeof key === "function" ? key(paper) : paper[key];
+    counts[value] = (counts[value] || 0) + 1;
+    return counts;
+  }, {})
+).sort(([a], [b]) => String(a).localeCompare(String(b)));
+
+const summaryRows = papers.map(paper => {
+  const note = `[${paper.title}](${paper.relative})`;
+  return `| ${note} | ${paper.year} | ${paper.venue} | ${paper.direction} | ${paper.fields["Context Type"] || "Not verified"} | ${paper.status} |`;
+}).join("\n");
+
+const yearStats = countBy("year").map(([year, count]) => `${year}: ${count}`).join(" · ");
+const directionStats = countBy("direction").map(([direction, count]) => `${direction}: ${count}`).join(" · ");
+const venueStats = countBy("venue").map(([venue, count]) => `${venue}: ${count}`).join(" · ");
+
+fs.writeFileSync(path.join(docsDir, "index.md"), `# A3 Human Motion Research\n\n**2024–2026 · In-context Human Motion Prediction & Context-aware Human Motion Generation**\n\n> 面向导师汇报与持续科研使用的 Markdown-first 文献笔记。论文信息以各独立笔记为唯一正文数据源；本页和导航由脚本生成。\n\n## 统计\n\n- 共 ${papers.length} 篇\n- 年份：${yearStats}\n- 方向：${directionStats}\n- Venue：${venueStats}\n\n## 文献总览\n\n| Title | Year | Venue | Research Direction | Context Type | Status |\n|---|---:|---|---|---|---|\n${summaryRows}\n\n## 编辑方式\n\n直接编辑 \`docs/papers/年份/*.md\`，然后运行 \`node generate-notes.mjs\` 同步首页、方向索引和 MkDocs 导航。无法由一手来源确认的字段保留为 \`Not verified\`。\n`, "utf8");
+
+fs.mkdirSync(path.join(docsDir, "directions"), { recursive: true });
+for (const [direction, info] of Object.entries(directionInfo)) {
+  const selected = papers.filter(paper => paper.direction === direction);
+  const sections = [...new Set(selected.map(paper => paper.year))].sort((a, b) => b - a).map(year => {
+    const items = selected.filter(paper => paper.year === year).map(paper =>
+      `- [${paper.title}](../${paper.relative}) — ${paper.venue} ${paper.year}`
+    ).join("\n");
+    return `## ${year}\n\n${items}`;
+  }).join("\n\n");
+  fs.writeFileSync(path.join(docsDir, "directions", `${info.slug}.md`),
+    `# ${direction}\n\n${info.intro}\n\n当前收录 **${selected.length}** 篇。\n\n${sections}\n`, "utf8");
+}
+
+const configPath = "mkdocs.yml";
+const config = fs.readFileSync(configPath, "utf8");
+const prefix = config.replace(/\nnav:\s*[\s\S]*$/, "").trimEnd();
+const yamlLabel = value => JSON.stringify(value);
+const nav = ["nav:", "  - 文献总览: index.md", "  - 研究方向:"];
+for (const [direction, info] of Object.entries(directionInfo)) {
+  nav.push(`      - ${yamlLabel(direction)}: directions/${info.slug}.md`);
+}
+nav.push("  - 维护:", "      - 论文笔记模板: PAPER_TEMPLATE.md");
+for (const year of [...new Set(papers.map(paper => paper.year))].sort((a, b) => b - a)) {
+  nav.push(`  - ${year}:`);
+  for (const direction of Object.keys(directionInfo)) {
+    const selected = papers.filter(paper => paper.year === year && paper.direction === direction);
+    if (!selected.length) continue;
+    nav.push(`      - ${yamlLabel(direction)}:`);
+    for (const paper of selected) nav.push(`          - ${yamlLabel(paper.title)}: ${paper.relative}`);
+  }
+}
+fs.writeFileSync(configPath, `${prefix}\n${nav.join("\n")}\n`, "utf8");
+
+console.log(`Generated index, direction pages, and navigation from ${papers.length} Markdown notes.`);

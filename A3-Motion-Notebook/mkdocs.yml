@@ -23,24 +23,34 @@ extra_css:
   - stylesheets/extra.css
 nav:
   - 文献总览: index.md
+  - 研究方向:
+      - "In-context Human Motion Prediction": directions/prediction.md
+      - "Context-aware Human Motion Generation": directions/generation.md
+  - 维护:
+      - 论文笔记模板: PAPER_TEMPLATE.md
   - 2026:
-      - InterPhys: papers/2026/interphys.md
-      - Co-Manipulation: papers/2026/como.md
-      - ViHOI: papers/2026/vihoi.md
+      - "Context-aware Human Motion Generation":
+          - "InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene": papers/2026/interphys.md
+          - "Stability-Driven Motion Generation for Object-Guided Human-Human Co-Manipulation": papers/2026/como.md
+          - "ViHOI: Human-Object Interaction Synthesis with Visual Priors": papers/2026/vihoi.md
   - 2025:
-      - Vision-Guided Action: papers/2025/vga.md
-      - Lightweight Interactions: papers/2025/lsti.md
-      - Move-in-2D: papers/2025/move2d.md
-      - SemGeoMo: papers/2025/semgeomo.md
-      - HSI-GPT: papers/2025/hsigpt.md
-      - InterAct: papers/2025/interact.md
-      - ChainHOI: papers/2025/chainhoi.md
+      - "In-context Human Motion Prediction":
+          - "Efficient Multi-Person Motion Prediction by Lightweight Spatial and Temporal Interactions": papers/2025/lsti.md
+          - "Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance in 3D Scenes": papers/2025/vga.md
+      - "Context-aware Human Motion Generation":
+          - "ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation": papers/2025/chainhoi.md
+          - "HSI-GPT: A General-Purpose Large Scene-Motion-Language Model for Human Scene Interaction": papers/2025/hsigpt.md
+          - "InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation": papers/2025/interact.md
+          - "Move-in-2D: 2D-Conditioned Human Motion Generation": papers/2025/move2d.md
+          - "SemGeoMo: Dynamic Contextual Human Motion Generation with Semantic and Geometric Guidance": papers/2025/semgeomo.md
   - 2024:
-      - Multimodal Forecasting: papers/2024/msif.md
-      - Scene-responsive Prediction: papers/2024/scenedm.md
-      - WANDR: papers/2024/wandr.md
-      - Text in 3D Scenes: papers/2024/lhmp.md
-      - Move as You Say: papers/2024/moveasyou.md
-      - TRUMANS: papers/2024/trumans.md
-      - InterControl: papers/2024/intercontrol.md
-      - InterDreamer: papers/2024/interdreamer.md
+      - "In-context Human Motion Prediction":
+          - "Harmonizing Stochasticity and Determinism: Scene-responsive Diverse Human Motion Prediction": papers/2024/scenedm.md
+          - "Multimodal Sense-Informed Forecasting of 3D Human Motions": papers/2024/msif.md
+      - "Context-aware Human Motion Generation":
+          - "Generating Human Motion in 3D Scenes from Text Descriptions": papers/2024/lhmp.md
+          - "InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint": papers/2024/intercontrol.md
+          - "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction": papers/2024/interdreamer.md
+          - "Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance": papers/2024/moveasyou.md
+          - "Scaling Up Dynamic Human-Scene Interaction Modeling": papers/2024/trumans.md
+          - "WANDR: Intention-guided Human Motion Generation": papers/2024/wandr.md

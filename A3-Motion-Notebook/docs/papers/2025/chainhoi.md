@@ -1,48 +1,60 @@
 # ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation
 
-> CVPR 2025 · Motion Generation
+> CVPR 2025 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2025</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Lian-Ao Zeng et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Object · Language</td></tr>
-<tr><td>Method</td><td>Diffusion · GNN</td></tr>
-<tr><td>Benchmark</td><td>BEHAVE · OMOMO</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_ChainHOI_Joint-based_Kinematic_Chain_Modeling_for_Human-Object_Interaction_Generation_CVPR_2025_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Ling-An Zeng; Guohong Huang; Yi-Lin Wei; Shengbo Gu; Yu-Ming Tang; Jingke Meng; Wei-Shi Zheng |
+| Venue | CVPR |
+| Year | 2025 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_ChainHOI_Joint-based_Kinematic_Chain_Modeling_for_Human-Object_Interaction_Generation_CVPR_2025_paper.html) |
+| Code | [Official repository](https://github.com/qinghuannn/ChainHOI) |
+| Project Page | Not verified |
+| Dataset | BEHAVE; OMOMO |
+| Task | Text-driven human-object interaction generation |
+| Input | Text description and target-object geometry |
+| Output | Human and object interaction motion |
+| Context Type | Language; object geometry; joint/object relations |
+| Method Family | Generative spatiotemporal GCN plus kinematic-chain Transformer |
 
 ## Problem
 
-Generate fine-grained interactions with accurate body–object relations.
+Full-body pose tokens model body-object relations only implicitly, making fine joint contacts and coordinated kinetic-chain motion difficult to learn.
 
 ## Key Idea
 
-!!! tip
-    Represent HOI through object-conditioned body kinematic chains.
-
-## Input / Output
-
-Text + object geometry → human and object interaction motion.
+Represent the object as a node connected to likely interaction joints, then explicitly organize those joint relations into body kinetic chains.
 
 ## Method
 
-Joint-centric chain modeling guides a generative motion backbone.
+GST-GCN models short- and long-term joint/object relationships on a selective interaction graph. The Kinematics-based Interaction Module uses chain-specific tokens and masked Transformer decoding, conditioned on text and object geometry, to coordinate relevant joints.
 
-## Dataset
+## Contributions
 
-BEHAVE, OMOMO
+- Explicitly models HOI at both joint and kinetic-chain levels.
+- Introduces an object-augmented joint graph and GST-GCN.
+- Adds chain-specific conditioning through KIM.
 
-## Contribution
+## Experiments
 
-Improves interaction fidelity beyond body-only motion quality.
+Evaluations on BEHAVE and OMOMO compare motion realism, semantic consistency, interaction quality, and runtime, with ablations for the joint graph and kinetic-chain module.
 
-## Limitation
+## Limitations
 
-Kinematic quality does not guarantee physically stable forces.
+Kinematic coherence and geometric contact do not ensure force balance or stable manipulation. The interaction graph also relies on identifying likely contact joints.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: offers structured contact priors for robot learning.
+Relevance: Peripheral. It is text-conditioned generation, but explicit joint-object relationships could inform structured context encoders for future-motion prediction.
+
+## Relevance to Embodied Intelligence
+
+Kinetic-chain structure offers an interpretable prior for whole-body coordination around manipulated objects.
+
+## My Notes
+
+TODO: Compare the chain-token representation with explicit contact graphs and force-aware constraints.

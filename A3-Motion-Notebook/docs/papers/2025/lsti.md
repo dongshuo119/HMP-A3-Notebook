@@ -1,48 +1,60 @@
 # Efficient Multi-Person Motion Prediction by Lightweight Spatial and Temporal Interactions
 
-> ICCV 2025 · Motion Prediction
+> ICCV 2025 · In-context Human Motion Prediction
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2025</td></tr>
-<tr><td>Venue</td><td>ICCV</td></tr>
-<tr><td>Authors</td><td>Yuhui Zheng et al.</td></tr>
-<tr><td>Task</td><td>Motion Prediction</td></tr>
-<tr><td>Context</td><td>Human Interaction</td></tr>
-<tr><td>Method</td><td>Transformer · GNN</td></tr>
-<tr><td>Benchmark</td><td>3DPW · CMU-Mocap</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/ICCV2025/html/Zheng_Efficient_Multi-Person_Motion_Prediction_by_Lightweight_Spatial_and_Temporal_Interactions_ICCV_2025_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Yuanhong Zheng; Ruixuan Yu; Jian Sun |
+| Venue | ICCV |
+| Year | 2025 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Zheng_Efficient_Multi-Person_Motion_Prediction_by_Lightweight_Spatial_and_Temporal_Interactions_ICCV_2025_paper.html) |
+| Code | [Official repository](https://github.com/Yuanhong-Zheng/EMPMP) |
+| Project Page | Not verified |
+| Dataset | 3DPW; AMASS; CMU-Mocap; MuPoTS-3D |
+| Task | Multi-person 3D motion prediction |
+| Input | Historical skeleton sequences for multiple people |
+| Output | Future joint trajectories for all observed people |
+| Context Type | Other people; inter-person distance and temporal interaction |
+| Method Family | Lightweight dual-branch interaction network |
 
 ## Problem
 
-Predict multiple people jointly without heavy interaction modeling.
+Multi-person forecasting requires both individual temporal modeling and inter-person reasoning, but Transformer-heavy approaches can be expensive for deployment.
 
 ## Key Idea
 
-!!! tip
-    Factor lightweight spatial and temporal interaction modules.
-
-## Input / Output
-
-Past multi-person skeletons → future multi-person motion.
+Use lightweight local/global branches and explicitly exchange spatial and temporal information instead of applying full attention over every person, joint, and frame.
 
 ## Method
 
-Efficient relation modeling captures inter-person and temporal dependencies.
+EMPMP separates individual and group representations, joins them through a cross-level interaction block, and adds explicit inter-person distance embeddings. The design targets a favorable accuracy/parameter trade-off.
 
-## Dataset
+## Contributions
 
-3DPW, CMU-Mocap
+- Introduces an efficient architecture for joint multi-person pose forecasting.
+- Models spatial and temporal cross-level interactions with explicit distance information.
+- Evaluates multiple prediction horizons and transfer settings.
 
-## Contribution
+## Experiments
 
-Improves the accuracy–efficiency trade-off for multi-person forecasting.
+Experiments cover 3DPW, AMASS pretraining, synthetic CMU-Mocap multi-person scenes, and CMU-Syn to MuPoTS-3D transfer. The paper reports both prediction accuracy and computational cost.
 
-## Limitation
+## Limitations
 
-No explicit scene or semantic intent grounding.
+The context is limited to skeletal motion of other people. It does not explicitly model scene geometry, language, gaze, or physical contact.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: efficient social-motion prediction is deployable on robot platforms.
+Relevance: Core. Other people are the explicit context for forecasting each person's future motion.
+
+## Relevance to Embodied Intelligence
+
+The lightweight design is relevant to robots that must forecast nearby groups under limited compute.
+
+## My Notes
+
+TODO: Compare performance per parameter/FLOP against stronger scene-aware predictors under the same horizon.

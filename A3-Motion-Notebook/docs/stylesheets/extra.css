@@ -1,6 +1,26 @@
-:root { --md-primary-fg-color:#255f4e; --md-accent-fg-color:#397866; }
-.md-typeset h1,.md-typeset h2 { font-family:Georgia,"Noto Serif SC",serif; }
-.md-typeset table:not([class]) { font-size:.72rem; }
-.md-typeset .paper-meta td:first-child { color:#777; width:8rem; }
-.md-typeset .paper-meta td { border:none; border-bottom:1px solid #eceae4; }
-.md-header { box-shadow:none; }
+:root {
+  --md-primary-fg-color: #255f4e;
+  --md-accent-fg-color: #397866;
+  --md-default-bg-color: #fffefb;
+}
+
+.md-header { box-shadow: none; }
+.md-grid { max-width: 72rem; }
+.md-typeset { line-height: 1.72; }
+.md-typeset h1,
+.md-typeset h2 { font-family: Georgia, "Noto Serif SC", serif; }
+.md-typeset h2 {
+  margin-top: 2.2em;
+  border-bottom: 1px solid #eceae4;
+  padding-bottom: .25em;
+}
+.md-typeset table:not([class]) { font-size: .78rem; }
+.md-typeset table:not([class]) td:first-child {
+  color: #5f665f;
+  min-width: 7.5rem;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset table:not([class]) { font-size: .72rem; }
+  .md-typeset table:not([class]) td:first-child { min-width: 6rem; }
+}

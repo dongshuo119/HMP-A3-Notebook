@@ -1,48 +1,60 @@
-# Scene-responsive Diverse Human Motion Prediction
+# Harmonizing Stochasticity and Determinism: Scene-responsive Diverse Human Motion Prediction
 
-> NeurIPS 2024 · Motion Prediction
+> NeurIPS 2024 · In-context Human Motion Prediction
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>NeurIPS</td></tr>
-<tr><td>Authors</td><td>Tao Wang et al.</td></tr>
-<tr><td>Task</td><td>Motion Prediction</td></tr>
-<tr><td>Context</td><td>Scene</td></tr>
-<tr><td>Method</td><td>Diffusion</td></tr>
-<tr><td>Benchmark</td><td>GTA-IM · PROX</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4620a66570e554a3ff0e39dc59bcb07a-Abstract-Conference.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Tuo Wang; Zhenbo Song; Zhenyu Lou; Qiongjie Cui; Luoming Zhang; Cheng Cheng; Haofan Wang; Xu Tang; Huaxia Li; Hong Zhou |
+| Venue | NeurIPS |
+| Year | 2024 |
+| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4620a66570e554a3ff0e39dc59bcb07a-Abstract-Conference.html) |
+| Code | Not verified |
+| Project Page | [DiMoP3D project page](https://sites.google.com/view/dimop3d) |
+| Dataset | GIMO; CIRCLE |
+| Task | Diverse future human motion prediction in 3D scenes |
+| Input | Observed human motion and a 3D scene point cloud |
+| Output | Multiple plausible future trajectories and body-motion sequences |
+| Context Type | 3D scene geometry; candidate interaction objects |
+| Method Family | Scene-conditioned diffusion |
 
 ## Problem
 
-Predict diverse futures that remain physically compatible with 3D scenes.
+Diverse prediction must model stochastic human futures while obeying deterministic scene constraints such as collision avoidance and semantically valid object interaction.
 
 ## Key Idea
 
-!!! tip
-    Make stochastic motion sampling explicitly responsive to scene geometry.
-
-## Input / Output
-
-Past motion + 3D scene → diverse future motions.
+DiMoP3D turns scene-aware diverse prediction into a controllable stochastic process: infer likely interaction targets, plan feasible endpoints and paths, and use those deterministic factors to guide diffusion sampling.
 
 ## Method
 
-A scene-conditioned diffusion framework models multimodal futures.
+The context-aware intermodal interpreter identifies likely target objects from scene and history. A behaviorally consistent stochastic planner predicts target poses and obstacle-free trajectories. A self-prompted diffusion generator then produces diverse motions that remain consistent with those plans.
 
-## Dataset
+## Contributions
 
-GTA-IM, PROX
+- Defines diverse human motion prediction inside real captured 3D scenes.
+- Separates target interpretation, stochastic planning, and scene-constrained motion generation.
+- Evaluates physical consistency and diversity on GIMO and CIRCLE.
 
-## Contribution
+## Experiments
 
-Bridges diversity and scene feasibility in human motion prediction.
+The paper compares against deterministic and stochastic predictors on GIMO and CIRCLE and reports ablations for its interpreter, planner, and generator. Exact metrics remain to be entered after a focused results-table review.
 
-## Limitation
+## Limitations
 
-Performance depends on scene reconstruction quality.
+The pipeline depends on scene segmentation, target selection, and planned endpoints; errors in these stages can constrain or misdirect the generated futures.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: directly supports collision-aware human–robot coexistence.
+Relevance: Core. It explicitly combines motion history with scene context to predict multiple future human motions.
+
+## Relevance to Embodied Intelligence
+
+Scene-feasible multimodal forecasts can help robots reason over several plausible human intentions instead of committing to one future.
+
+## My Notes
+
+TODO: Study how much diversity remains after imposing deterministic target and endpoint constraints.

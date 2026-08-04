@@ -1,48 +1,60 @@
-# Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance
+# Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance in 3D Scenes
 
-> CVPR 2025 · Motion Prediction
+> CVPR 2025 · In-context Human Motion Prediction
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2025</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Tianyi Yu et al.</td></tr>
-<tr><td>Task</td><td>Motion Prediction</td></tr>
-<tr><td>Context</td><td>Scene · Object · Intention</td></tr>
-<tr><td>Method</td><td>Transformer · Diffusion</td></tr>
-<tr><td>Benchmark</td><td>GIMO</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Vision-Guided_Action_Enhancing_3D_Human_Motion_Prediction_with_Gaze-informed_Affordance_CVPR_2025_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Ting Yu; Yi Lin; Jun Yu; Zhenyu Lou; Qiongjie Cui |
+| Venue | CVPR |
+| Year | 2025 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_Vision-Guided_Action_Enhancing_3D_Human_Motion_Prediction_with_Gaze-informed_Affordance_CVPR_2025_paper.html) |
+| Code | Not verified |
+| Project Page | Not verified |
+| Dataset | GIMO; GTA-IM |
+| Task | Future 3D human pose and trajectory prediction |
+| Input | Observed motion, gaze, and a 3D scene point cloud |
+| Output | Future trajectory and body poses, including interaction poses |
+| Context Type | Gaze/intention; object affordance; 3D scene |
+| Method Family | Affordance-aware scene-conditioned predictor |
 
 ## Problem
 
-Infer where a person will act before their pose makes the goal obvious.
+Gaze coordinates indicate where a person looks but not what interaction the observed object affords, which can leave predicted endpoint poses semantically or physically incorrect.
 
 ## Key Idea
 
-!!! tip
-    Use gaze to discover scene affordances that condition future motion.
-
-## Input / Output
-
-Past motion + gaze + scene → future 3D motion.
+Use gaze to identify the relevant object, infer its action affordance, and condition future interaction-pose generation on both semantics and geometry.
 
 ## Method
 
-Gaze-informed affordance features guide a scene-conditioned predictor.
+GAP3DS contains a gaze-guided affordance learner that selects an object and predicts affordance semantics. An affordance-aware pose generator produces candidate interaction poses, which guide decoding of the full future motion and trajectory.
 
-## Dataset
+## Contributions
 
-GIMO
+- Moves beyond gaze-as-coordinate by modeling gaze-informed object affordance.
+- Connects early intent cues to future human-object interaction poses.
+- Evaluates trajectory, pose, and penetration behavior on GIMO and GTA-IM.
 
-## Contribution
+## Experiments
 
-Connects visual attention, intention, affordance, and motion forecasting.
+The main paper reports GIMO comparisons and ablations; GTA-IM results are placed in supplementary material. Reported metrics cover trajectory deviation, MPJPE, and scene penetration.
 
-## Limitation
+## Limitations
 
-Relies on reliable gaze estimation and visible target regions.
+The pipeline relies on gaze sensing and correct object/affordance inference. The official text says code is on a project page, but a reliable public URL was not verified during this pass.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    Very high: anticipatory HRI depends on early intent and affordance inference.
+Relevance: Core. It forecasts future motion from an observed prefix while explicitly reasoning about gaze, object affordance, and scene geometry.
+
+## Relevance to Embodied Intelligence
+
+Affordance-aware intent prediction can help a robot distinguish not only where a human will move, but what action they may perform there.
+
+## My Notes
+
+TODO: Check whether the affordance labels generalize beyond the action categories represented in GIMO/GTA-IM.

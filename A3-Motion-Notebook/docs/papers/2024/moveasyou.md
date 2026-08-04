@@ -1,48 +1,60 @@
-# Move as You Say, Interact as You Can
+# Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance
 
-> CVPR 2024 · Motion Generation
+> CVPR 2024 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Zan Wang et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Scene · Object · Language</td></tr>
-<tr><td>Method</td><td>Diffusion</td></tr>
-<tr><td>Benchmark</td><td>HUMANISE · PROX</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Move_as_You_Say_Interact_as_You_Can_Language-guided_Human_CVPR_2024_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Zan Wang; Yixin Chen; Baoxiong Jia; Puhao Li; Jinlu Zhang; Jingze Zhang; Tengyu Liu; Yixin Zhu; Wei Liang; Siyuan Huang |
+| Venue | CVPR |
+| Year | 2024 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Move_as_You_Say_Interact_as_You_Can_Language-guided_Human_CVPR_2024_paper.html) |
+| Code | [Official repository](https://github.com/afford-motion/afford-motion) |
+| Project Page | [AffordMotion project page](https://afford-motion.github.io/) |
+| Dataset | HumanML3D; HUMANISE; curated unseen-scene evaluation set |
+| Task | Language-guided human motion generation in 3D scenes |
+| Input | Text description and a 3D scene point cloud |
+| Output | Text-aligned, scene-grounded human motion |
+| Context Type | Language; scene geometry; learned affordance map |
+| Method Family | Two-stage diffusion |
 
 ## Problem
 
-Synthesize language-guided motion with credible scene contact.
+Directly learning the joint distribution of language, sparse 3D-scene data, and motion is difficult and generalizes poorly to new scene-description pairs.
 
 ## Key Idea
 
-!!! tip
-    Condition motion generation on explicit scene affordance maps.
-
-## Input / Output
-
-Language + 3D scene affordance → human–scene interaction motion.
+Use a scene affordance map as an explicit intermediate representation that links where an interaction should occur with how the body should move.
 
 ## Method
 
-Affordance prediction and diffusion-based motion synthesis are coupled.
+An Affordance Diffusion Model predicts a joint-to-scene distance-field representation from language and scene geometry. An Affordance-to-Motion Diffusion Model then generates motion from the text and predicted affordance. The second stage combines an affordance encoder with a Transformer-based diffusion backbone.
 
-## Dataset
+## Contributions
 
-HUMANISE, PROX
+- Introduces affordance maps as an intermediate bridge between grounding and generation.
+- Trains a two-stage framework that can use partially paired motion, language, and scene data.
+- Evaluates on HumanML3D, HUMANISE, and a curated unseen-scene/generalization set.
 
-## Contribution
+## Experiments
 
-Makes scene affordance a first-class condition for motion generation.
+The paper reports text-to-motion and scene-aware generation comparisons on HumanML3D and HUMANISE, plus generalization tests using scenes from ScanNet, PROX, Replica, and Matterport3D.
 
-## Limitation
+## Limitations
 
-Affordance errors propagate into motion and contact quality.
+The second stage inherits mistakes from affordance prediction. The representation captures geometry through distances but does not explicitly model forces or object dynamics.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: affordance-grounded action is central to robot manipulation and HRI.
+Relevance: Peripheral. It is a conditional generator, but the intermediate affordance representation is relevant to context-aware future-motion models.
+
+## Relevance to Embodied Intelligence
+
+Affordance maps give an embodied agent an interpretable connection between linguistic intent, interaction location, and motion.
+
+## My Notes
+
+TODO: Compare predicted affordance maps with explicit contact schedules used in physics-aware models.

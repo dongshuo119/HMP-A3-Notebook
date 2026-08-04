@@ -1,5 +1,7 @@
 # A3 Human Motion Research Notebook
 
+> **Legacy snapshot:** 此目录保留早期 Markdown 导出结果，不参与 MkDocs 构建，也不是当前论文信息的数据源。请编辑 `../docs/papers/`；本目录将在人工确认后再决定是否归档或删除。
+
 A Markdown-first literature notebook for **in-context human motion prediction and generation (2024–2026)**. GitHub can render every file directly; no website or build step is required.
 
 ## Paper Index

@@ -1,48 +1,60 @@
 # Generating Human Motion in 3D Scenes from Text Descriptions
 
-> CVPR 2024 · Motion Generation
+> CVPR 2024 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Zhi Cen et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Scene · Object · Language</td></tr>
-<tr><td>Method</td><td>Diffusion</td></tr>
-<tr><td>Benchmark</td><td>HUMANISE</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2024/html/Cen_Generating_Human_Motion_in_3D_Scenes_from_Text_Descriptions_CVPR_2024_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Zhi Cen; Huaijin Pi; Sida Peng; Zehong Shen; Minghui Yang; Shuai Zhu; Hujun Bao; Xiaowei Zhou |
+| Venue | CVPR |
+| Year | 2024 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Cen_Generating_Human_Motion_in_3D_Scenes_from_Text_Descriptions_CVPR_2024_paper.html) |
+| Code | [Official repository](https://github.com/zju3dv/text_scene_motion) |
+| Project Page | [Project page](https://zju3dv.github.io/text_scene_motion) |
+| Dataset | HUMANISE; AMASS pretraining; PROX for zero-shot scene generalization |
+| Task | Text-guided human-scene interaction generation |
+| Input | Text instruction and a 3D indoor-scene scan |
+| Output | Scene-grounded 3D human motion |
+| Context Type | Language; 3D scene; target object |
+| Method Family | LLM-based object grounding plus diffusion |
 
 ## Problem
 
-Generate motion that obeys both language and 3D scene constraints.
+The model must resolve spatial language to a particular object and then synthesize motion that is both text-faithful and geometrically compatible with that object and scene.
 
 ## Key Idea
 
-!!! tip
-    Use an object-centric scene representation to ground text in interaction targets.
-
-## Input / Output
-
-Text + 3D scene → scene-consistent human motion.
+Decompose the task into language grounding and object-centric generation instead of asking one model to reason over the complete noisy scene point cloud.
 
 ## Method
 
-A conditional generative model aligns language, target objects, and motion.
+The method converts a scene graph into text and uses an LLM question-answering formulation to identify the target object. Local point clouds around that object are converted into volumetric sensors, which condition a text-guided diffusion motion generator.
 
-## Dataset
+## Contributions
 
-HUMANISE
+- Explicitly separates target-object grounding from motion synthesis.
+- Uses an object-centric scene representation to reduce irrelevant scene complexity.
+- Demonstrates HUMANISE performance and generalization to PROX scenes without fine-tuning.
 
-## Contribution
+## Experiments
 
-Improves semantic and geometric consistency of scene-conditioned synthesis.
+Models are pretrained on AMASS and fine-tuned/evaluated on HUMANISE. The paper also shows qualitative zero-shot transfer to PROX scenes and ablates the grounding and object-centric representation.
 
-## Limitation
+## Limitations
 
-Static scenes and annotated target objects constrain generality.
+The pipeline depends on a scene graph and an LLM grounding answer before generation. Errors in target selection propagate to the motion model, and the main setting uses static indoor scans.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: connects language grounding, affordance, and physical action.
+Relevance: Peripheral. It does not infer future motion from an observed prefix, but its explicit language-scene-object grounding provides reusable context representations for prediction.
+
+## Relevance to Embodied Intelligence
+
+The decomposition connects natural-language task understanding, spatial grounding, and action synthesis in a form relevant to embodied agents.
+
+## My Notes
+
+TODO: Examine the failure handling when the LLM selects an incorrect or ambiguous target object.

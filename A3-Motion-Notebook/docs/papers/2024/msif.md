@@ -1,48 +1,60 @@
 # Multimodal Sense-Informed Forecasting of 3D Human Motions
 
-> CVPR 2024 · Motion Prediction
+> CVPR 2024 · In-context Human Motion Prediction
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>CVPR</td></tr>
-<tr><td>Authors</td><td>Zhenyu Lou et al.</td></tr>
-<tr><td>Task</td><td>Motion Prediction</td></tr>
-<tr><td>Context</td><td>Scene · Intention</td></tr>
-<tr><td>Method</td><td>Transformer · Diffusion</td></tr>
-<tr><td>Benchmark</td><td>GIMO · Human3.6M</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://openaccess.thecvf.com/content/CVPR2024/html/Lou_Multimodal_Sense-Informed_Forecasting_of_3D_Human_Motions_CVPR_2024_paper.html)　—</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Zhenyu Lou; Qiongjie Cui; Haofan Wang; Xu Tang; Hong Zhou |
+| Venue | CVPR |
+| Year | 2024 |
+| Paper | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2024/html/Lou_Multimodal_Sense-Informed_Forecasting_of_3D_Human_Motions_CVPR_2024_paper.html) |
+| Code | [Official repository](https://github.com/kjle6/SIF3D-master) |
+| Project Page | [SIF3D project page](https://sites.google.com/view/cvpr2024sif3d) |
+| Dataset | GIMO; GTA-1M |
+| Task | Future 3D human pose and trajectory prediction |
+| Input | Observed motion, 3D scene point cloud, and human gaze |
+| Output | Future 3D body poses and global trajectory |
+| Context Type | 3D scene; gaze/intention |
+| Method Family | Multimodal attention-based motion predictor |
 
 ## Problem
 
-Forecast plausible 3D futures using more than pose history alone.
+Pose-history-only predictors can ignore environmental constraints and human intent, producing future poses that penetrate the scene or move toward implausible targets.
 
 ## Key Idea
 
-!!! tip
-    Fuse complementary sensory cues to reduce future-motion ambiguity.
-
-## Input / Output
-
-Past motion + multimodal observations → future 3D motion.
+SIF3D treats the scene and gaze as complementary senses. It learns which scene points matter to the observed motion and uses gaze as an intention cue for both trajectory planning and pose forecasting.
 
 ## Method
 
-Multimodal encoders condition a generative forecasting model.
+Motion and point-cloud encoders feed two cross-modal attention modules. Ternary intention-aware attention combines gaze, motion, and scene features for global salient-point selection; semantic coherence-aware attention connects local pose features with relevant scene regions. A geometry discriminator regularizes predicted motion realism.
 
-## Dataset
+## Contributions
 
-GIMO, Human3.6M
+- Introduces a predictor conditioned jointly on observed motion, the external 3D scene, and internal gaze.
+- Separates global intention reasoning from local scene-motion semantic reasoning.
+- Evaluates pose and trajectory prediction on GIMO and GTA-1M.
 
-## Contribution
+## Experiments
 
-Shows that sense-informed context improves long-horizon forecasting.
+The paper reports comparisons and ablations on GIMO and GTA-1M using trajectory and pose errors. It attributes improvements to the two scene-aware attention mechanisms and geometry regularization. Exact numerical results are not copied into this notebook.
 
-## Limitation
+## Limitations
 
-Requires synchronized context modalities that may be unavailable in the wild.
+The method assumes synchronized gaze and reconstructed point-cloud context. Its quality therefore depends on sensing and scene reconstruction that may not be available in unconstrained deployments.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    High: anticipatory robots can use the forecast for safer planning.
+Relevance: Core. This is a direct future-motion prediction paper in which past motion is explicitly conditioned on scene geometry and gaze-derived intention.
+
+## Relevance to Embodied Intelligence
+
+The predicted trajectory and interaction pose can support anticipatory robot planning around human goals and nearby obstacles.
+
+## My Notes
+
+TODO: Compare the respective gains from gaze, local scene saliency, and the geometry discriminator.

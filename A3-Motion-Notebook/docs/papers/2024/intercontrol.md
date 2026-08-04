@@ -1,48 +1,60 @@
 # InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint
 
-> NeurIPS 2024 · Motion Generation
+> NeurIPS 2024 · Context-aware Human Motion Generation
+>
+> Status: Partially verified
 
-<table class="paper-meta">
-<tr><td>Year</td><td>2024</td></tr>
-<tr><td>Venue</td><td>NeurIPS</td></tr>
-<tr><td>Authors</td><td>Zhenzhi Wang et al.</td></tr>
-<tr><td>Task</td><td>Motion Generation</td></tr>
-<tr><td>Context</td><td>Human Interaction · Language</td></tr>
-<tr><td>Method</td><td>Diffusion</td></tr>
-<tr><td>Benchmark</td><td>HumanML3D · InterHuman</td></tr>
-<tr><td>Links</td><td>[Paper ↗](https://proceedings.neurips.cc/paper_files/paper/2024/hash/be41269a9fe258f1ecba663b0b402322-Abstract-Conference.html)　[Code ↗](https://github.com/zhenzhiwang/intercontrol)</td></tr>
-</table>
+## Paper Information
+
+| Field | Content |
+|---|---|
+| Authors | Zhenzhi Wang; Jingbo Wang; Yixuan Li; Dahua Lin; Bo Dai |
+| Venue | NeurIPS |
+| Year | 2024 |
+| Paper | [NeurIPS Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/be41269a9fe258f1ecba663b0b402322-Abstract-Conference.html) |
+| Code | [Official repository](https://github.com/zhenzhiwang/intercontrol) |
+| Project Page | Not verified |
+| Dataset | HumanML3D; KIT-ML; InterHuman prompts for interaction evaluation |
+| Task | Zero-shot multi-person interaction generation |
+| Input | Single-person motion prior plus joint-position/contact constraints, optionally derived from text by an LLM |
+| Output | Spatially coordinated motion for an arbitrary number of people |
+| Context Type | Other people; joint contacts/distances; language-derived constraints |
+| Method Family | Diffusion ControlNet plus inverse-kinematics guidance |
 
 ## Problem
 
-Generate coherent interactions for an arbitrary number of people.
+Models trained for a fixed number of people do not naturally scale to larger groups, while single-person generators cannot ensure that corresponding joints meet in global space.
 
 ## Key Idea
 
-!!! tip
-    Translate interactions into controllable inter-person joint-distance constraints.
-
-## Input / Output
-
-Text + joint relations → multi-person interaction motion.
+Represent inter-person interaction as differentiable spatial relations between joints, allowing a single-person diffusion prior to be reused independently for any number of characters.
 
 ## Method
 
-A motion controller and inverse-kinematics guidance steer a pretrained diffusion prior.
+Motion ControlNet adds global joint controls to a pretrained MDM prior. During denoising, inverse-kinematics guidance optimizes generated joints toward desired global positions and can combine contact, orientation, and collision objectives. An LLM can translate interaction descriptions into contact-pair constraints.
 
-## Dataset
+## Contributions
 
-HumanML3D, InterHuman
+- Generates multi-person interactions zero-shot from a single-person prior.
+- Supports precise control of any joint, person, and time step.
+- Demonstrates arbitrary-size group interactions and compatibility with physics animation.
 
-## Contribution
+## Experiments
 
-Achieves zero-shot multi-human interaction without fixed-person training data.
+Joint-control experiments use HumanML3D and KIT-ML. InterHuman descriptions are adapted into constraints for multi-person evaluation and user studies; InterHuman is not the core training dataset for the motion prior.
 
-## Limitation
+## Limitations
 
-Joint constraints do not fully encode social intent or contact physics.
+Joint-distance constraints approximate interaction semantics and do not enforce full-body contact dynamics or social causality. LLM-produced constraints can also be incomplete.
 
-## Embodied AI Relevance
+## Relevance to In-context Human Motion Prediction
 
-!!! success
-    Medium-high: useful for social navigation and multi-agent behavior simulation.
+Relevance: Peripheral. This is controllable generation rather than observation-conditioned forecasting, but other people form an explicit social context.
+
+## Relevance to Embodied Intelligence
+
+Scalable spatial interaction controls are useful for social simulation and generating reference behaviors for multi-agent or physics-based systems.
+
+## My Notes
+
+TODO: Test how sensitive interaction quality is to errors in automatically generated joint constraints.

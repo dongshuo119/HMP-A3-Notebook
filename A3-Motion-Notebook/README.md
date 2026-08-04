@@ -1,10 +1,16 @@
 # A3 Human Motion Research Notebook
 
-2024–2026 **In-context Human Motion Prediction / Generation** 文献笔记库。
+2024–2026 **In-context Human Motion Prediction / Context-aware Human Motion Generation** 文献笔记库。当前收录 **18 篇**：2024 年 8 篇、2025 年 7 篇、2026 年 3 篇；Prediction 4 篇、Generation 14 篇。
 
-## 日常编辑（只需做这件事）
+## 日常编辑
 
-进入 `docs/papers/年份/`，打开对应的 `.md` 文件直接修改。新增论文时，复制一篇现有笔记、改名并填写，再把文件加入 `mkdocs.yml` 的 `nav`。
+`docs/papers/年份/*.md` 是论文正文的唯一数据源。新增论文时复制 `docs/PAPER_TEMPLATE.md`，完成一手来源核验后放入对应年份目录，再运行：
+
+```bash
+node generate-notes.mjs
+```
+
+脚本从 Markdown 笔记生成首页统计、方向索引和 `mkdocs.yml` 导航，避免多处手工同步。论文、代码和项目页使用标准 Markdown 链接，可在 GitHub 与 GitHub Pages 中直接点击。
 
 ## 本地预览
 
@@ -26,6 +32,8 @@ mkdocs serve
 ```text
 docs/
 ├── index.md             # 文献总览
+├── PAPER_TEMPLATE.md    # 新论文笔记模板
+├── directions/          # 方向索引（自动生成）
 ├── papers/
 │   ├── 2024/            # 每篇论文一个 Markdown 文件
 │   ├── 2025/
@@ -33,4 +41,4 @@ docs/
 └── stylesheets/
 ```
 
-> `papers.json` 是初始数据备份；日常整理以 `docs/papers/**/*.md` 为准。
+> `papers.json` 与 `A3-Motion-Notebook-source/` 是历史快照，仅为保留旧数据而暂不删除，不再参与生成流程，也不应作为事实来源。
