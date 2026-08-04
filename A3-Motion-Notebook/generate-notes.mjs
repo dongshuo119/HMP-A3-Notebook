@@ -105,4 +105,24 @@ for (const year of [...new Set(papers.map(paper => paper.year))].sort((a, b) => 
 }
 fs.writeFileSync(configPath, `${prefix}\n${nav.join("\n")}\n`, "utf8");
 
-console.log(`Generated index, direction pages, and navigation from ${papers.length} Markdown notes.`);
+const yearCounts = Object.fromEntries(countBy("year"));
+const directionCounts = Object.fromEntries(countBy("direction"));
+const projectReadmePath = "README.md";
+let projectReadme = fs.readFileSync(projectReadmePath, "utf8");
+projectReadme = projectReadme.replace(
+  /当前收录 \*\*\d+ 篇\*\*：2024 年 \d+ 篇、2025 年 \d+ 篇、2026 年 \d+ 篇；Prediction \d+ 篇、Generation \d+ 篇。/,
+  `当前收录 **${papers.length} 篇**：2024 年 ${yearCounts[2024] || 0} 篇、2025 年 ${yearCounts[2025] || 0} 篇、2026 年 ${yearCounts[2026] || 0} 篇；Prediction ${directionCounts["In-context Human Motion Prediction"] || 0} 篇、Generation ${directionCounts["Context-aware Human Motion Generation"] || 0} 篇。`
+);
+fs.writeFileSync(projectReadmePath, projectReadme, "utf8");
+
+const repositoryReadmePath = path.join("..", "README.md");
+if (fs.existsSync(repositoryReadmePath)) {
+  let repositoryReadme = fs.readFileSync(repositoryReadmePath, "utf8");
+  repositoryReadme = repositoryReadme.replace(
+    /当前共收录 \*\*\d+ 篇\*\*：In-context Human Motion Prediction \d+ 篇，Context-aware Human Motion Generation \d+ 篇。/,
+    `当前共收录 **${papers.length} 篇**：In-context Human Motion Prediction ${directionCounts["In-context Human Motion Prediction"] || 0} 篇，Context-aware Human Motion Generation ${directionCounts["Context-aware Human Motion Generation"] || 0} 篇。`
+  );
+  fs.writeFileSync(repositoryReadmePath, repositoryReadme, "utf8");
+}
+
+console.log(`Generated index, direction pages, navigation, and README statistics from ${papers.length} Markdown notes.`);

@@ -1,6 +1,6 @@
 # A3 Human Motion Research Notebook
 
-2024–2026 **In-context Human Motion Prediction / Context-aware Human Motion Generation** 文献笔记库。当前收录 **18 篇**：2024 年 8 篇、2025 年 7 篇、2026 年 3 篇；Prediction 4 篇、Generation 14 篇。
+2024–2026 **In-context Human Motion Prediction / Context-aware Human Motion Generation** 文献笔记库。当前收录 **59 篇**：2024 年 16 篇、2025 年 25 篇、2026 年 18 篇；Prediction 25 篇、Generation 34 篇。
 
 ## 日常编辑
 

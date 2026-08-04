@@ -29,28 +29,70 @@ nav:
   - 维护:
       - 论文笔记模板: PAPER_TEMPLATE.md
   - 2026:
+      - "In-context Human Motion Prediction":
+          - "Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction": papers/2026/gmlf.md
+          - "HUMOF: Human Motion Forecasting in Interactive Social Scenes": papers/2026/humof.md
+          - "Progressive Guessing to Fixed Point: Rethinking Human Motion Prediction with Deep Equilibrium Models": papers/2026/motiondeq.md
+          - "ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data": papers/2026/remogen.md
+          - "Unified Multi-Modal Interactive and Reactive 3D Motion Generation via Rectified Flow": papers/2026/dualflow.md
       - "Context-aware Human Motion Generation":
+          - "Decoupled Generative Modeling for Human-Object Interaction Synthesis": papers/2026/dechoi.md
+          - "Disentangled Hierarchical VAE for 3D Human-Human Interaction Generation": papers/2026/dhvae.md
+          - "HSI-GPT2: A Dual-Granularity Large Motion Reasoning Model with Diffusion Refinement for Human-Scene Interaction": papers/2026/hsi-gpt2.md
+          - "InfBaGel: Human-Object-Scene Interaction Generation with Dynamic Perception and Iterative Refinement": papers/2026/infbagel.md
+          - "Interact2Ar: Full-Body Human-Human Interaction Generation via Autoregressive Diffusion Models": papers/2026/interact2ar.md
           - "InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene": papers/2026/interphys.md
+          - "InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions": papers/2026/interprior.md
+          - "PAMotion: Physics-Aware Motion Generation for Full-Body Interaction with Multiple Objects": papers/2026/pamotion.md
           - "Stability-Driven Motion Generation for Object-Guided Human-Human Co-Manipulation": papers/2026/como.md
+          - "SyncMos: Scalable Motion Synchronisation for Multi-Agent Scene Interaction": papers/2026/syncmos.md
+          - "TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size": papers/2026/teamhoi.md
+          - "Unleashing Guidance Without Classifiers for Human-Object Interaction Animation": papers/2026/pace-guided-hoi.md
           - "ViHOI: Human-Object Interaction Synthesis with Visual Priors": papers/2026/vihoi.md
   - 2025:
       - "In-context Human Motion Prediction":
+          - "ALIEN: Implicit Neural Representations for Human Motion Prediction under Arbitrary Latency": papers/2025/alien.md
           - "Efficient Multi-Person Motion Prediction by Lightweight Spatial and Temporal Interactions": papers/2025/lsti.md
+          - "LAL: Enhancing 3D Human Motion Prediction with Latency-aware Auxiliary Learning": papers/2025/lal.md
+          - "MotionMap: Representing Multimodality in Human Pose Forecasting": papers/2025/motionmap.md
+          - "Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction": papers/2025/skeletondiffusion.md
+          - "Proxy-Bridged Game Transformer for Interactive Extreme Motion Prediction": papers/2025/pgformer.md
+          - "Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic": papers/2025/stab-acb.md
+          - "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation": papers/2025/think-then-react.md
+          - "Towards Predicting Any Human Trajectory In Context": papers/2025/trajicl.md
+          - "UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation": papers/2025/uniegomotion.md
           - "Vision-Guided Action: Enhancing 3D Human Motion Prediction with Gaze-informed Affordance in 3D Scenes": papers/2025/vga.md
+          - "WaveAR: Wavelet-Aware Continuous Autoregressive Diffusion for Accurate Human Motion Prediction": papers/2025/wavear.md
       - "Context-aware Human Motion Generation":
+          - "A Unified Framework for Motion Reasoning and Generation in Human Interaction": papers/2025/molam.md
+          - "AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation": papers/2025/avatargo.md
           - "ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation": papers/2025/chainhoi.md
+          - "HOI-Dyn: Learning Interaction Dynamics for Human-Object Motion Diffusion": papers/2025/hoi-dyn.md
           - "HSI-GPT: A General-Purpose Large Scene-Motion-Language Model for Human Scene Interaction": papers/2025/hsigpt.md
           - "InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation": papers/2025/interact.md
+          - "Learning to Generate Human-Human-Object Interactions from Textual Descriptions": papers/2025/hhoi-text.md
+          - "Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs": papers/2025/motion-agent.md
           - "Move-in-2D: 2D-Conditioned Human Motion Generation": papers/2025/move2d.md
+          - "SceneMI: Motion In-betweening for Modeling Human-Scene Interaction": papers/2025/scenemi.md
           - "SemGeoMo: Dynamic Contextual Human Motion Generation with Semantic and Geometric Guidance": papers/2025/semgeomo.md
+          - "Sitcom-Crafter: A Plot-Driven Human Motion Generation System in 3D Scenes": papers/2025/sitcom-crafter.md
+          - "SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis": papers/2025/syncdiff.md
   - 2024:
       - "In-context Human Motion Prediction":
+          - "Forecasting of 3D Whole-body Human Poses with Grasping Objects": papers/2024/c3host.md
+          - "FutureHuman3D: Forecasting Complex Long-Term 3D Human Behavior from Video Observations": papers/2024/futurehuman3d.md
           - "Harmonizing Stochasticity and Determinism: Scene-responsive Diverse Human Motion Prediction": papers/2024/scenedm.md
+          - "Human Motion Prediction Under Unexpected Perturbation": papers/2024/unexpected-perturbation.md
+          - "MoML: Online Meta Adaptation for 3D Human Motion Prediction": papers/2024/moml.md
+          - "Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning": papers/2024/t2p.md
           - "Multimodal Sense-Informed Forecasting of 3D Human Motions": papers/2024/msif.md
+          - "Rethinking Human Motion Prediction with Symplectic Integral": papers/2024/sinn.md
       - "Context-aware Human Motion Generation":
+          - "CooHOI: Learning Cooperative Human-Object Interaction with Manipulated Object Dynamics": papers/2024/coohoi.md
           - "Generating Human Motion in 3D Scenes from Text Descriptions": papers/2024/lhmp.md
           - "InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint": papers/2024/intercontrol.md
           - "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction": papers/2024/interdreamer.md
           - "Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance": papers/2024/moveasyou.md
+          - "OmniControl: Control Any Joint at Any Time for Human Motion Generation": papers/2024/omnicontrol.md
           - "Scaling Up Dynamic Human-Scene Interaction Modeling": papers/2024/trumans.md
           - "WANDR: Intention-guided Human Motion Generation": papers/2024/wandr.md

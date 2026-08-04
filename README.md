@@ -7,6 +7,6 @@
 - [查看 MkDocs 项目说明](A3-Motion-Notebook/README.md)
 - [查看论文笔记模板](A3-Motion-Notebook/docs/PAPER_TEMPLATE.md)
 
-当前共收录 **18 篇**：In-context Human Motion Prediction 4 篇，Context-aware Human Motion Generation 14 篇。
+当前共收录 **59 篇**：In-context Human Motion Prediction 25 篇，Context-aware Human Motion Generation 34 篇。
 
 MkDocs 项目暂保留在 `A3-Motion-Notebook/` 内，现有 GitHub Actions 已按该路径构建和部署。为避免一次性移动大量论文文件，本轮不调整 Git 历史或目录位置。
